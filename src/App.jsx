@@ -1,10 +1,10 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import { Suspense, useEffect, useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routing from "./Routing";
 import { darkTheme, lightTheme } from "./assets/theme";
-import Navbar from "./components/common/Navbar";
 import ThemeModBtn from "./components/common/ThemeModBtn";
-import Viewer from "./components/common/Viewer";
 import LoaderContext from "./contexts/loaderContext";
 import ThemeContext from "./contexts/themeContext";
 
@@ -24,29 +24,20 @@ export default function App() {
   }, []);
 
   return (
-    <Suspense
-      fallback={
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <h1>Loading...</h1>
-        </div>
-      }
-    >
-      <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
-        <LoaderContext.Provider value={{ isLoading, setIsLoading }}>
-          <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-            <CssBaseline />
-            <Navbar />
-            <Viewer />
-            <ThemeModBtn />
-          </ThemeProvider>
-        </LoaderContext.Provider>
-      </ThemeContext.Provider>
-    </Suspense>
+    <Router>
+      <Suspense>
+        <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
+          <LoaderContext.Provider value={{ isLoading, setIsLoading }}>
+            <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+              <CssBaseline />
+              {/* <Navbar />
+              <Viewer /> */}
+              <Routing />
+              <ThemeModBtn />
+            </ThemeProvider>
+          </LoaderContext.Provider>
+        </ThemeContext.Provider>
+      </Suspense>
+    </Router>
   );
 }
