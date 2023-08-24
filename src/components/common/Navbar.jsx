@@ -9,11 +9,13 @@ import {
   Typography,
 } from "@mui/material";
 import * as React from "react";
-import menu from "../../api/menu.json";
+import { useContext } from "react";
+import PageContext from "../../contexts/pageContext";
 import { FolderSharedIcon, MenuIcon } from "./Icons";
 
 const Navbar = () => {
   const [displayMenu, setDisplayMenu] = React.useState(false);
+  const pageContext = useContext(PageContext);
 
   return (
     <AppBar color="primary">
@@ -63,7 +65,7 @@ const Navbar = () => {
               display: { xs: "none", md: "flex", justifyContent: "flex-end" },
             }}
           >
-            {menu.map((page) => (
+            {pageContext.page.map((page) => (
               <Button
                 key={page.id}
                 onClick={() => setDisplayMenu(false)}
@@ -93,7 +95,7 @@ const Navbar = () => {
                 top: "3rem",
               }}
             >
-              {menu.map((page) => (
+              {pageContext.page.map((page) => (
                 <Button
                   key={page.id}
                   onClick={() => setDisplayMenu(false)}

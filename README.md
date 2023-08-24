@@ -34,5 +34,5 @@ Sin estructura de momento -->
 ¡Las contribuciones son bienvenidas! Si encuentras errores, mejoras o nuevas características que agregar, siéntete libre de abrir un "issue".
 
 ---
-© DToro-Dev | Diego Toro Reyes 2023
+© DToro-Dev | Diego Toro Reyes | 2023
 <!--  | [Enlace a tu sitio web o perfil en redes sociales] -->
