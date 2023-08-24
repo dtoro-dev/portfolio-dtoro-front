@@ -1,14 +1,20 @@
 import { configureStore } from "@reduxjs/toolkit";
+import pagesReducer from "./pages/slice";
+import themeReducer from "./theme/slice";
 
 const persistanceMiddleware = (store) => (next) => (action) => {
 	next(action);
-	localStorage.setItem("__redux__state__", JSON.stringify(store.getState()));
+	localStorage.setItem(import.meta.env.VITE_REDUX_STATE, JSON.stringify(store.getState()));
 };
 
-export const store = configureStore({
+const store = configureStore({
 	reducer: {
 		// reducers
-    
+    theme: themeReducer,
+		pages: pagesReducer
 	},
 	middleware: [persistanceMiddleware],
 });
+
+
+export default store;
