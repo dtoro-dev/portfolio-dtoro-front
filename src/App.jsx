@@ -30,8 +30,6 @@ export default function App() {
           <LoaderContext.Provider value={{ isLoading, setIsLoading }}>
             <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
               <CssBaseline />
-              {/* <Navbar />
-              <Viewer /> */}
               <Routing />
               <ThemeModBtn />
             </ThemeProvider>

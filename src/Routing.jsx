@@ -5,7 +5,7 @@ const MainHome = lazy(() => import("./components/views/MainHome"));
 // const Navbar = lazy(() => import("./components/Navbar"));
 // const Social = lazy(() => import("./components/Social"));
 // const Footer = lazy(() => import("./components/Footer"));
-// const Loader = lazy(() => import("./components/Loader"));
+const Loader = lazy(() => import("./components/common/Loader"));
 
 const Routing = () => {
   const theme = useTheme();
@@ -13,8 +13,8 @@ const Routing = () => {
 
   return (
     <>
-      {/* <Loader />
-            <Navbar /> */}
+      <Loader />
+      {/* <Navbar /> */}
       {/* {!isMobile && <Social />} */}
       <Routes>
         <Route exact path="/" element={<MainHome />} />
