@@ -1,9 +1,9 @@
 import "../styles/gritch.css";
 
-const Logo = ({title}) => {
+const Logo = ({brand, title}) => {
   return (
-    <div class="glitch-wrapper">
-      <div class="glitch" data-glitch={title}>
+    <div className="glitch-wrapper">
+      <div className={brand ? "glitch-brand" : "glitch" } data-glitch={title}>
         {title}
       </div>
     </div>

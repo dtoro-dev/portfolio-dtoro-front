@@ -7,6 +7,8 @@
   align-items: center;
   width: 100%;
   height: auto;
+  user-select: none;
+  cursor: pointer;
 }
 
 .glitch {
@@ -21,6 +23,18 @@
   padding: 0 20px;
 }
 
+.glitch-brand {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+  letter-spacing: 4px;
+  animation: shift 4s ease-in-out infinite alternate;
+  z-index: 1;
+  border: 3px solid;
+  padding: 0 15px;
+}
+
 .glitch:before {
   content: attr(data-glitch);
   position: absolute;
@@ -28,10 +42,11 @@
   left: -2px;
   text-shadow: -1px 0 #00ffff;
   width: 100%;
-  color: black;
+  color: inherit;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-before 3s infinite linear alternate-reverse;
+  border: 3px solid #00ffff;
   padding: 0 20px;
 }
 
@@ -46,6 +61,7 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-after 2s infinite linear alternate-reverse;
+  border: 3px solid #ff00ff;
   padding: 0 20px;
 }
 

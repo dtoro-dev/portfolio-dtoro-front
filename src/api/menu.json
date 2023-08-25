@@ -1,32 +1,30 @@
 [
   {
     "id": 1,
-    "name": "Home",
+    "name": "About",
     "description": "Page Initial",
-    "to": "/"
+    "to": "/about",
+    "label": "menu_about"
   },
   {
     "id": 2,
-    "name": "About",
-    "description": "Page Initial",
-    "to": "/about"
+    "name": "Projects",
+    "description": "Page of projects",
+    "to": "/projects",
+    "label": "menu_project"
   },
   {
     "id": 3,
-    "name": "Projects",
-    "description": "Page of projects",
-    "to": "/projects"
+    "name": "Experience",
+    "description": "Page of experience",
+    "to": "/experience",
+    "label": "menu_experience"
   },
   {
     "id": 4,
-    "name": "Experience",
-    "description": "Page of experience",
-    "to": "/experience"
-  },
-  {
-    "id": 5,
     "name": "Contact",
     "description": "Page of contact",
-    "to": "/contact"
+    "to": "/contact",
+    "label": "menu_contact"
   }
 ]
