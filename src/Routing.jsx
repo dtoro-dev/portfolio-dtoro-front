@@ -14,7 +14,6 @@ import ThemeContext from "./contexts/themeContext";
 
 const MainHome = lazy(() => import("./components/views/MainHome"));
 const Navbar = lazy(() => import("./components/common/Navbar"));
-// const Social = lazy(() => import("./components/common/Social"));
 const Footer = lazy(() => import("./components/common/Footer"));
 const Loader = lazy(() => import("./components/common/Loader"));
 
