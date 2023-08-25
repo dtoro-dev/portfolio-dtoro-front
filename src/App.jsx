@@ -4,7 +4,6 @@ import { Suspense, useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routing from "./Routing";
 import { darkTheme, lightTheme } from "./assets/theme";
-import ThemeModBtn from "./components/common/ThemeModBtn";
 import LoaderContext from "./contexts/loaderContext";
 import ThemeContext from "./contexts/themeContext";
 
@@ -30,10 +29,7 @@ export default function App() {
           <LoaderContext.Provider value={{ isLoading, setIsLoading }}>
             <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
               <CssBaseline />
-              {/* <Navbar />
-              <Viewer /> */}
               <Routing />
-              <ThemeModBtn />
             </ThemeProvider>
           </LoaderContext.Provider>
         </ThemeContext.Provider>

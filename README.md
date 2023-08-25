@@ -1,6 +1,6 @@
 # Portafolio Web
 
-Este es el repositorio del portafolio web que estoy creando como parte de mi desarrollo como developer fullstack. El portafolio está siendo construido utilizando Vite, TypeScript y SWC.
+Este es el repositorio del portafolio web que estoy creando como parte de mi desarrollo como developer fullstack.
 
 ## Modificacion de Theme
 
@@ -35,4 +35,6 @@ Sin estructura de momento -->
 
 ---
 © DToro-Dev | Diego Toro Reyes | 2023
+_______________________________________________________
+Inspired by https://github.com/Mehdi-BHA/mehdibha.com
 <!--  | [Enlace a tu sitio web o perfil en redes sociales] -->
