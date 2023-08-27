@@ -23,7 +23,7 @@ const Footer = () => {
       <Divider style={{ backgroundColor: theme.palette.primary.main }} />
       <Box sx={classes.footer}>
         {/* {isMobile && <Social mobile />} */}
-        <Typography variant="body2" color="initial">
+        <Typography variant="h6" color="inherit">
           © 2023 Diego Toro Reyes, Inc
         </Typography>
       </Box>
