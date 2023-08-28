@@ -4,7 +4,7 @@ import { baseTheme } from "./base";
 export const lightTheme = createTheme({
   palette: {
     background: {
-      default: "#F6F4EB",
+      default: "#b8b195",
       paper: "#e3ddcf",
     },
     primary: {
@@ -12,7 +12,7 @@ export const lightTheme = createTheme({
       contrastText: "#000",
     },
     secondary: {
-      main: "#4682A9",
+      main: "#2a4259",
       contrastText: "#121c26",
     },
     text: {

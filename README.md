@@ -33,6 +33,10 @@ Sin estructura de momento -->
 
 ¡Las contribuciones son bienvenidas! Si encuentras errores, mejoras o nuevas características que agregar, siéntete libre de abrir un "issue".
 
+## Utilidades aplicadas
+https://react-svgr.com/playground/
+inkscape
+
 ---
 © DToro-Dev | Diego Toro Reyes | 2023
 _______________________________________________________

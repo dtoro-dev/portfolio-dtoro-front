@@ -1,6 +1,8 @@
+import { useTheme } from "@mui/material";
 import Fab from "@mui/material/Fab";
 
 const FabList = ({ display }) => {
+  const theme = useTheme();
   let y = 0;
 
   return (
@@ -19,6 +21,7 @@ const FabList = ({ display }) => {
         <Fab
           sx={{
             marginBottom: 1,
+            color: theme.palette.secondary
           }}
           key={index}
           aria-label={obj.label}
