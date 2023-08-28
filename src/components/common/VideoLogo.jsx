@@ -1,5 +1,5 @@
 import { useTheme } from "@mui/material";
-// import VideoMask from "../../assets/images/VideoMask";
+import VideoMask from "../../assets/images/VideoMask";
 
 const VideoLogo = (props) => {
   const theme = useTheme();
@@ -21,7 +21,7 @@ const VideoLogo = (props) => {
       top: 0,
       left: 0,
       right: 0,
-      width: "300px",
+      width: "100%",
       [theme.breakpoints.down("xs")]: {
         width: "230px",
         height: "52px",
@@ -43,7 +43,7 @@ const VideoLogo = (props) => {
   };
   return (
     <div style={classes.wrapper} {...props}>
-      {/* <VideoMask sx={classes.mask} /> */}
+      <VideoMask style={classes.mask} />
       <video autoPlay muted loop preload="auto" sx={classes.video}>
         <source src="https://d33wubrfki0l68.cloudfront.net/ab4c4ea31f1543825102ebf15a35080cdc1397ce/b8c4f/static/images/frontpage/hero/gradient.mp4" />
       </video>

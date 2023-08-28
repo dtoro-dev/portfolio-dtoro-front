@@ -57,16 +57,16 @@ const Background3d = () => {
   }, [isLoading, controls]);
 
   return (
-    <motion.div animate={controls} className={classes.wrapper}>
-      <div className={classes.container}>
+    <motion.div animate={controls} style={classes.wrapper}>
+      <div style={classes.container}>
         <iframe
           title="background-3d"
           src="https://my.spline.design/awesomefolio-0c39efc3de701ba97be395cc128e4e2f/"
           frameBorder="0"
           height="100%"
-          className={classes.iframe}
+          style={classes.iframe}
         ></iframe>
-        <div className={classes.hideLogo} />
+        <div style={classes.hideLogo} />
       </div>
     </motion.div>
   );

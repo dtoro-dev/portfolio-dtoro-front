@@ -20,10 +20,10 @@ const Footer = () => {
 
   return (
     <Container>
-      <Divider style={{ backgroundColor: theme.palette.primary.main }} />
+      <Divider style={{ backgroundColor: theme.palette.secondary }} />
       <Box sx={classes.footer}>
         {/* {isMobile && <Social mobile />} */}
-        <Typography variant="h6" color="inherit">
+        <Typography variant="h6" color="secondary">
           © 2023 Diego Toro Reyes, Inc
         </Typography>
       </Box>

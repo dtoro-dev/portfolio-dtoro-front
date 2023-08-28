@@ -28,6 +28,9 @@ const Navbar = () => {
     logo: {
       width: "150px",
     },
+    navbar: {
+        backgroundColor: theme.palette.background.default,
+    },
     toolbar: {
       justifyContent: "space-between",
       alignItems: "center",
@@ -59,7 +62,7 @@ const Navbar = () => {
 
   return (
     <motion.div animate={controls}>
-      <AppBar position="fixed" elevation={0} component="nav">
+      <AppBar position="fixed" sx={classes.navbar} elevation={0} component="nav">
         <Toolbar
           sx={classes.toolbar}
           component={motion.div}
@@ -75,7 +78,7 @@ const Navbar = () => {
           <Hidden smDown>
             <Menu homeIsActive={homeIsActive} />
           </Hidden>
-          <Hidden smUp>
+          <Hidden mdUp>
             <HamburgerIcon
               isOpen={mobileNavIsOpen}
               onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}
@@ -83,7 +86,7 @@ const Navbar = () => {
           </Hidden>
         </Toolbar>
       </AppBar>
-      <Hidden smUp>
+      <Hidden mdUp>
         <MobileMenu
           open={mobileNavIsOpen}
           onClose={() => setMobileNavIsOpen(false)}

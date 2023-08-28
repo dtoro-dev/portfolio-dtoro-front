@@ -11,12 +11,12 @@ const Home = () => {
   const classes = {
     subTitle: {
       marginBottom: "16px",
-      fontSize: "75px",
+      fontSize: "60px",
       [theme.breakpoints.down("sm")]: {
-        fontSize: "45px",
+        fontSize: "35px",
       },
       [theme.breakpoints.down("xs")]: {
-        fontSize: "35px",
+        fontSize: "25px",
       },
     },
   };
@@ -43,7 +43,7 @@ const Home = () => {
           component={motion.div}
           animate={controls}
           custom={0}
-          color="primary"
+          color="secondary"
           variant="h5"
           sx={{ marginBottom: "0px" }}
         >
@@ -64,7 +64,7 @@ const Home = () => {
           component={motion.p}
           animate={controls}
           custom={2}
-          variant="h2"
+          variant="h3"
           color="secondary"
           sx={classes.subTitle}
         >
@@ -75,7 +75,7 @@ const Home = () => {
           animate={controls}
           custom={3}
           variant="body2"
-          color="primary"
+          color="secondary"
           sx={{ marginBottom: "0" }}
         >
           {t("home_job")}
@@ -85,7 +85,7 @@ const Home = () => {
           animate={controls}
           custom={4}
           variant="body1"
-          color="primary"
+          color="secondary"
           sx={{ marginBottom: "30px" }}
         >
           {t("home_location")}
@@ -99,7 +99,7 @@ const Home = () => {
             duration={500}
             to="contact"
             variant="outlined"
-            color="primary"
+            color="secondary"
             size="large"
           >
             {t("home_contact_btn")}
