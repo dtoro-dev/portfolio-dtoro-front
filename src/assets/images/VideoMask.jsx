@@ -3,8 +3,7 @@ import { useTheme } from "@mui/material";
 const VideoMask = (props) => {
   const theme = useTheme();
   return (
-    <svg xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 98 297" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 297" {...props}>
       <defs>
         <clipPath id="a" clipPathUnits="userSpaceOnUse">
           <path
@@ -27,7 +26,6 @@ const VideoMask = (props) => {
         clipPath="url(#a)"
         style={{
           fill: theme.palette.background.default,
-
         }}
       />
     </svg>
