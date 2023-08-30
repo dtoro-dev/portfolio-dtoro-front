@@ -1,9 +1,20 @@
-import React from 'react'
+import { useTheme } from "@mui/material";
+import React from "react";
+import AvatarImg from "../../assets/images/dtorodev.jpg";
 
 const Avatar = () => {
-  return (
-    <div>Avatar</div>
-  )
-}
+  const theme = useTheme();
+  const classes = {
+    avatarImg: {
+      borderRadius: "50%",
+      width: "270px",
+      height: "270px",
+      objectFit: "cover",
+      boxShadow: theme.shadows[10],
+    },
+  };
 
-export default Avatar
+  return <img src={AvatarImg} alt="Diego Toro" style={classes.avatarImg} />;
+};
+
+export default Avatar;

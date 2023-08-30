@@ -12,6 +12,9 @@ import Skills from "../common/Skills";
 import SectionContainer from "../containers/SectionContainer";
 
 const About = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const { t } = useTranslation();
   const classes = {
     gridItemWrapper: {
       display: "flex",
@@ -19,9 +22,7 @@ const About = () => {
       alignItems: "center",
     },
   };
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const { t } = useTranslation();
+  
   return (
     <SectionContainer id="about" title={t("menu_about")} maxWidth="md">
       <Grid container spacing={0} alignItems="center" style={{ width: "100%" }}>
