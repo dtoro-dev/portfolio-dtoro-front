@@ -2,6 +2,7 @@ import { Button, Typography, useTheme } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
 import { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+// import { Link } from "react-scroll";
 import VideoLogo from "../../components/common/VideoLogo";
 import loaderContext from "../../contexts/loaderContext";
 import HomeContainer from "../containers/HomeContainer";
