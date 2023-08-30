@@ -3,12 +3,15 @@ import { baseTheme } from "./base";
 
 export const darkTheme = createTheme({
   palette: {
+    type: "dark",
     background: {
+      paper: "#35526e",
       default: "#121c26",
-      paper: "#4682A9",
     },
     primary: {
-      main: "#4682A9",
+      light: "#6f93ab",
+      main: "#4088b8",
+      dark: "#1f567a",
       contrastText: "#fff",
     },
     secondary: {

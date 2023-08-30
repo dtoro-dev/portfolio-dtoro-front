@@ -4,8 +4,8 @@ import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Events } from "react-scroll";
 import sections from "../../../api/menu.json";
+import ThemeContext from "../../../contexts/ThemeContext";
 import LoaderContext from "../../../contexts/loaderContext";
-import ThemeContext from "../../../contexts/themeContext";
 import LangSelector from "./LangSelector";
 
 const Menu = ({ homeIsActive }) => {
@@ -59,12 +59,13 @@ const Menu = ({ homeIsActive }) => {
 
   return (
     <div
-      sx={{
+      style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
+      {console.log(isDarkMode)}
       <Tabs
         sx={classes.tabs}
         variant="fullWidth"
@@ -77,9 +78,9 @@ const Menu = ({ homeIsActive }) => {
             <Tab
               disableRipple
               sx={{
-                transition: ".3s",
+                transition: ".5s",
                 "&:hover": {
-                  color: isDarkMode ? "black" : "#c2833e",
+                  color: isDarkMode ? "red" : "blue",
                 },
               }}
               custom={index}

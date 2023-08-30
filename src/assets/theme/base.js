@@ -23,7 +23,7 @@ export const baseTheme = {
         letterSpacing: "2px",
         borderRadius: 0,
         "&:hover": {
-          color: "rgb(230,230,230)",
+          color: "white",
           backgroundColor: "inherit",
         },
       },
