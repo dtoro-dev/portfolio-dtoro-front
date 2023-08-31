@@ -1,9 +1,12 @@
 import { useTheme } from "@mui/material";
+import { useContext } from "react";
 import VideoMask from "../../assets/images/VideoMask";
+import ThemeContext from "../../contexts/themeContext";
 
 const VideoLogo = (props) => {
   const theme = useTheme();
-  
+  const { isDarkMode } = useContext(ThemeContext);
+
   const classes = {
     wrapper: {
       overflow: "hidden",
@@ -33,8 +36,8 @@ const VideoLogo = (props) => {
       top: 0,
       left: "1px",
       right: "1px",
-      width: "298px",
-      height: "68px",
+      width: "100%",
+      height: "auto",
       [theme.breakpoints.down("xs")]: {
         width: "228px",
         height: "52px",
@@ -44,8 +47,8 @@ const VideoLogo = (props) => {
   return (
     <div style={classes.wrapper} {...props}>
       <VideoMask style={classes.mask} />
-      <video autoPlay muted loop preload="auto" sx={classes.video}>
-        <source src="https://d33wubrfki0l68.cloudfront.net/ab4c4ea31f1543825102ebf15a35080cdc1397ce/b8c4f/static/images/frontpage/hero/gradient.mp4" />
+      <video autoPlay muted loop preload="auto" style={classes.video}>
+        <source src="https://static.vecteezy.com/system/resources/previews/020/045/758/mp4/abstract-yellow-lines-energy-magical-glowing-rain-falling-on-a-curved-abstract-golden-background-4k-video.mp4" />
       </video>
     </div>
   );

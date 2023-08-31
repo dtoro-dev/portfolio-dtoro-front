@@ -6,18 +6,18 @@ export const lightTheme = createTheme({
     type: "light",
     background: {
       paper: "#ffffff",
-      default: "#fafafa",
+      default: "#e6e5e1",
     },
     primary: {
-      light: "#7986cb",
-      main: "#3f51b5",
-      dark: "#303f9f",
+      light: "#f7e14f",
+      main: "#bfab0f",
+      dark: "#dec20b",
       contrastText: "#000",
     },
     secondary: {
-      light: "#ff4081",
-      main: "#f50057",
-      dark: "#c51162",
+      light: "#6f93ab",
+      main: "#4088b8",
+      dark: "#1f567a",
       contrastText: "#fff",
     },
     error: {

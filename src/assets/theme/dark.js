@@ -15,10 +15,10 @@ export const darkTheme = createTheme({
       contrastText: "#fff",
     },
     secondary: {
-      light: "#ed913e",
-      main: "#d9781e",
-      dark: "#a3540a",
-      contrastText: "#fff",
+      light: "#f7e14f",
+      main: "#dec20b",
+      dark: "#bfab0f",
+      contrastText: "#000",
     },
     text: {
       primary: "#FFF",

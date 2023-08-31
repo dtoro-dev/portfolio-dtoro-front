@@ -1,6 +1,7 @@
 import { useTheme } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
 import { useContext, useEffect } from "react";
+import Astronaut from "../../assets/images/astronaut.gif";
 import loaderContext from "../../contexts/loaderContext";
 
 const Background3d = () => {
@@ -15,12 +16,11 @@ const Background3d = () => {
       width: "100%",
       overflow: "hidden",
     },
-    iframe: {
+    astronaut: {
       position: "absolute",
-      top: 0,
-      right: 0,
-      width: "100%",
-      maxWidth: "600px",
+      bottom: 0,
+      left: "30%",
+
     },
     wrapper: {
       position: "absolute",
@@ -33,7 +33,7 @@ const Background3d = () => {
       position: "absolute",
       right: 0,
       bottom: 0,
-      width: "100px",
+      width: "170px",
       height: "100px",
       backgroundColor: theme.palette.background.default,
     },
@@ -59,14 +59,7 @@ const Background3d = () => {
   return (
     <motion.div animate={controls} style={classes.wrapper}>
       <div style={classes.container}>
-        <iframe
-          title="background-3d"
-          src="https://my.spline.design/awesomefolio-0c39efc3de701ba97be395cc128e4e2f/"
-          frameBorder="0"
-          height="100%"
-          style={classes.iframe}
-        ></iframe>
-        <div style={classes.hideLogo} />
+        <img style={classes.astronaut} src={Astronaut} alt="Astronaut" />
       </div>
     </motion.div>
   );

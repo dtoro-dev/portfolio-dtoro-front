@@ -4,8 +4,8 @@ import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Events } from "react-scroll";
 import sections from "../../../api/menu.json";
-import ThemeContext from "../../../contexts/ThemeContext";
 import LoaderContext from "../../../contexts/loaderContext";
+import ThemeContext from "../../../contexts/themeContext";
 import LangSelector from "./LangSelector";
 
 const Menu = ({ homeIsActive }) => {
@@ -79,8 +79,9 @@ const Menu = ({ homeIsActive }) => {
               disableRipple
               sx={{
                 transition: ".5s",
+                color: theme.palette.primary,
                 "&:hover": {
-                  color: isDarkMode ? "red" : "blue",
+                  color: theme.palette.secondary,
                 },
               }}
               custom={index}

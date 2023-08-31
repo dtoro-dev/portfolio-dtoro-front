@@ -41,4 +41,5 @@ inkscape
 © DToro-Dev | Diego Toro Reyes | 2023
 _______________________________________________________
 Inspired by https://github.com/Mehdi-BHA/mehdibha.com
+Gif Home https://app.spline.design/community/file/a058c9e2-621d-4e3f-a909-22c39653ea9c
 <!--  | [Enlace a tu sitio web o perfil en redes sociales] -->
