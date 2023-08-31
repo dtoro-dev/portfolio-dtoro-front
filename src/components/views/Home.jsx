@@ -44,7 +44,7 @@ const Home = () => {
           component={motion.div}
           animate={controls}
           custom={0}
-          color="secondary"
+          color="primary"
           variant="h5"
           sx={{ marginBottom: "0px" }}
         >
@@ -76,7 +76,7 @@ const Home = () => {
           animate={controls}
           custom={3}
           variant="body2"
-          color="secondary"
+          color="primary"
           sx={{ marginBottom: "0" }}
         >
           {t("home_job")}
@@ -86,7 +86,7 @@ const Home = () => {
           animate={controls}
           custom={4}
           variant="body1"
-          color="secondary"
+          color="primary"
           sx={{ marginBottom: "30px" }}
         >
           {t("home_location")}
@@ -100,7 +100,7 @@ const Home = () => {
             duration={500}
             to="contact"
             variant="outlined"
-            color="secondary"
+            color="primary"
             size="large"
           >
             {t("home_contact_btn")}
