@@ -4,7 +4,9 @@ import { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 // import { Link } from "react-scroll";
 import VideoLogo from "../../components/common/VideoLogo";
-import loaderContext from "../../contexts/loaderContext";
+import LoaderContext from "../../contexts/loaderContext";
+import ThemeContext from "../../contexts/themeContext";
+import VideoLogoLight from "../common/VideoLogoLight";
 import HomeContainer from "../containers/HomeContainer";
 
 const Home = () => {
@@ -21,7 +23,8 @@ const Home = () => {
       },
     },
   };
-  const { isLoading } = useContext(loaderContext);
+  const { isLoading } = useContext(LoaderContext);
+  const { isDarkMode } = useContext(ThemeContext);
   const controls = useAnimation();
   const { t } = useTranslation();
 
@@ -40,7 +43,7 @@ const Home = () => {
   return (
     <HomeContainer id="home">
       <div>
-         <Typography
+        <Typography
           component={motion.div}
           animate={controls}
           custom={0}
@@ -59,7 +62,7 @@ const Home = () => {
           , {t("home_i")}
         </Typography>
         <motion.div animate={controls} custom={1}>
-          <VideoLogo />
+          {isDarkMode ? <VideoLogo /> : <VideoLogoLight />}
         </motion.div>
         <Typography
           component={motion.p}
@@ -105,7 +108,7 @@ const Home = () => {
           >
             {t("home_contact_btn")}
           </Button>
-        </motion.div> 
+        </motion.div>
       </div>
     </HomeContainer>
   );

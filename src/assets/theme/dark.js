@@ -16,13 +16,21 @@ export const darkTheme = createTheme({
     },
     secondary: {
       light: "#f7e14f",
-      main: "#dec20b",
-      dark: "#bfab0f",
+      main: "#ebcd09",
+      dark: "#d6be02",
       contrastText: "#000",
     },
+    error: {
+      light: "#e57373",
+      main: "#f44336",
+      dark: "#d32f2f",
+      contrastText: "#fff",
+    },
     text: {
-      primary: "#FFF",
-      secondary: "rgb(200,200,200)",
+      primary: "#ebcd09",
+      secondary: "#4088b8",
+      disabled: "rgba(0, 0, 0, 0.5)",
+      hint: "rgba(0, 0, 0, 0.5)",
     },
     action: {
       disabled: "rgb(70,70,70)",

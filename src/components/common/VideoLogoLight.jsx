@@ -3,10 +3,11 @@ import { useContext } from "react";
 import VideoMask from "../../assets/images/VideoMask";
 import ThemeContext from "../../contexts/themeContext";
 
-const VideoLogo = (props) => {
+const VideoLogoLight = (props) => {
   const theme = useTheme();
   const { isDarkMode } = useContext(ThemeContext);
-  const URL_DARK_MODE = "https://static.vecteezy.com/system/resources/previews/020/045/758/mp4/abstract-yellow-lines-energy-magical-glowing-rain-falling-on-a-curved-abstract-golden-background-4k-video.mp4"
+  const URL_LIGHT_MODE =
+    "https://static.vecteezy.com/system/resources/previews/007/836/132/mp4/4k-animation-animated-background-of-flowing-colorful-curved-lines-video.mp4";
 
   const classes = {
     wrapper: {
@@ -55,11 +56,11 @@ const VideoLogo = (props) => {
             height: "50px",
           }}
           sizes="374px"
-          src={URL_DARK_MODE}
+          src={URL_LIGHT_MODE}
         />
       </video>
     </div>
   );
 };
 
-export default VideoLogo;
+export default VideoLogoLight;

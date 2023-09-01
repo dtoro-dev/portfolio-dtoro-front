@@ -65,7 +65,6 @@ const Menu = ({ homeIsActive }) => {
         justifyContent: "center",
       }}
     >
-      {console.log(isDarkMode)}
       <Tabs
         sx={classes.tabs}
         variant="fullWidth"
@@ -79,13 +78,13 @@ const Menu = ({ homeIsActive }) => {
               disableRipple
               sx={{
                 transition: ".5s",
-                color: theme.palette.primary,
+                color: theme.palette.secondary,
                 "&:hover": {
-                  color: theme.palette.secondary,
+                  color: theme.palette.primary,
                 },
               }}
-              custom={index}
-              animate={controls}
+              // custom={index}
+              // animate={controls}
               to={section.to}
               label={t(section.label)}
             />

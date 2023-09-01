@@ -23,9 +23,9 @@ const LangSelector = (props) => {
   const classes = {
     profileMenu: {},
     menuItem: {
-      backgroundColor: theme.palette.background.default,
+      backgroundColor: theme.palette.background.paper,
       "&:hover": {
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.background.default,
       },
     },
     flagIcon: {
