@@ -7,11 +7,11 @@
   align-items: center;
   width: 100%;
   height: auto;
-  user-select: none;
+  /* user-select: none; */
   cursor: pointer;
 }
 
-.glitch {
+/* .glitch {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
@@ -33,7 +33,7 @@
   z-index: 1;
   border: 3px solid;
   padding: 0 15px;
-}
+} */
 
 .glitch:before {
   content: attr(data-glitch);

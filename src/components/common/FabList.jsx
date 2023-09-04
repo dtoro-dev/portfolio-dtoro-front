@@ -3,29 +3,35 @@ import Fab from "@mui/material/Fab";
 
 const FabList = ({ display }) => {
   const theme = useTheme();
-  let y = 0;
+  const classes = {
+    fabContainer: {
+      position: "fixed",
+      bottom: 16,
+      right: "16px",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      height: "auto",
+    },
+    fabButton: {
+      marginBottom: 1,
+      color: theme.palette.background.default,
+      background: theme.palette.primary.main,
+      "&:hover": {
+        background: theme.palette.primary.light,
+      }
+    }
+  }
 
   return (
     <div
-      style={{
-        position: "absolute",
-        bottom: 16,
-        right: "16px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "auto",
-      }}
+      style={classes.fabContainer}
     >
       {display.map((obj, index) => (
         <Fab
-          sx={{
-            marginBottom: 1,
-            color: theme.palette.secondary
-          }}
+          sx={classes.fabButton}
           key={index}
           aria-label={obj.label}
-          color={obj.color}
           variant={obj.href ?? "a"}
           target="_blank"
           href={obj.href}

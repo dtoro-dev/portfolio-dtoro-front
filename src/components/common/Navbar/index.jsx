@@ -29,7 +29,7 @@ const Navbar = () => {
       width: "150px",
     },
     navbar: {
-        backgroundColor: theme.palette.background.default,
+      backgroundColor: theme.palette.background.default,
     },
     toolbar: {
       justifyContent: "space-between",
@@ -62,7 +62,12 @@ const Navbar = () => {
 
   return (
     <motion.div animate={controls}>
-      <AppBar position="fixed" sx={classes.navbar} elevation={0} component="nav">
+      <AppBar
+        position="fixed"
+        sx={classes.navbar}
+        elevation={0}
+        component="nav"
+      >
         <Toolbar
           sx={classes.toolbar}
           component={motion.div}

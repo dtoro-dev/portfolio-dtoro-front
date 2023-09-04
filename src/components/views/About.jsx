@@ -1,18 +1,14 @@
-import {
-  Box,
-  Grid,
-  Typography,
-  useMediaQuery,
-  useTheme
-} from "@mui/material";
-import React from "react";
+import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { useContext } from "react";
 import { useTranslation } from "react-i18next";
+import ThemeContext from "../../contexts/themeContext";
 import Avatar from "../common/Avatar";
 import Skills from "../common/Skills";
 import SectionContainer from "../containers/SectionContainer";
 
 const About = () => {
   const theme = useTheme();
+  const { isDarkMode } = useContext(ThemeContext);
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const { t } = useTranslation();
   const classes = {
@@ -22,10 +18,10 @@ const About = () => {
       alignItems: "center",
     },
   };
-  
+
   return (
     <SectionContainer id="about" title={t("menu_about")} maxWidth="md">
-      <Grid container spacing={0} alignItems="center" style={{ width: "100%" }}>
+      <Grid container spacing={0} alignItems="center" sx={{ width: "100%" }}>
         {isMobile && (
           <Grid item xs={12} md={5} sx={classes.gridItemWrapper}>
             <Box mb={6}>
@@ -41,7 +37,7 @@ const About = () => {
           style={{ flexDirection: "column", alignItems: "space-around" }}
         >
           <Box mb={4}>
-            <Typography variant="body1">{t("about_desc")}</Typography>
+            <Typography color={isDarkMode ? "primary.light" : "primary.dark"} variant="body1">{t("about_desc")}</Typography>
           </Box>
           <Skills />
         </Grid>

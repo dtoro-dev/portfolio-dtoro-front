@@ -73,7 +73,7 @@ const SectionContainer = ({
           style={classes.titleContainer}
         >
           <Divider width="20%" />
-          <Typography variant="h4" color="initial" style={classes.title}>
+          <Typography variant="h4" color="primary.light" style={classes.title}>
             {title}
           </Typography>
           <Divider fullWidth />

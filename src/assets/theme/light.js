@@ -3,31 +3,44 @@ import { baseTheme } from "./base";
 
 export const lightTheme = createTheme({
   palette: {
+    type: "light",
     background: {
-      default: "#b8b195",
-      paper: "#e3ddcf",
+      paper: "#92d6ca",
+      default: "#ccede7",
     },
     primary: {
-      main: "#e3ddcf",
+      light: "#4ead9c",
+      main: "#008c73",
+      dark: "#065e4e",
       contrastText: "#000",
     },
     secondary: {
-      main: "#2a4259",
-      contrastText: "#121c26",
+      light: "#6f93ab",
+      main: "#1f567a",
+      dark: "#4088b8",
+      contrastText: "#fff",
+    },
+    error: {
+      light: "#e57373",
+      main: "#f44336",
+      dark: "#d32f2f",
+      contrastText: "#fff",
     },
     text: {
-      primary: "#000",
-      secondary: "rgb(30,30,30)",
+      primary: "#1f567a",
+      secondary: "#008c73",
+      disabled: "rgba(0, 0, 0, 0.5)",
+      hint: "rgba(0, 0, 0, 0.5)",
     },
     action: {
-      disabled: "rgb(70,70,70)",
-      disabledBackground: "rgb(150,150,150)",
+      // active: "rgba(0, 0, 0, 0.54)",
+      // hover: "rgba(0, 0, 0, 0.08)",
+      // hoverOpacity: 0.08,
+      // selected: "rgba(0, 0, 0, 0.14)",
+      // disabled: "rgba(0, 0, 0, 0.26)",
+      // disabledBackground: "rgba(0, 0, 0, 0.12)",
     },
   },
-  backgroundSecondary: {
-    bg: "#91C8E4",
-    text: "rgb(0,0,0)",
-  },
-  logoColor: "#91C8E4",
+  logoColor: "#4088b8",
   ...baseTheme,
 });

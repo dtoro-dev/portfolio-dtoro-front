@@ -3,21 +3,34 @@ import { baseTheme } from "./base";
 
 export const darkTheme = createTheme({
   palette: {
+    type: "dark",
     background: {
+      paper: "#35526e",
       default: "#121c26",
-      paper: "#4682A9",
     },
     primary: {
-      main: "#4682A9",
+      light: "#6f93ab",
+      main: "#4088b8",
+      dark: "#1f567a",
       contrastText: "#fff",
     },
     secondary: {
-      main: "#b8b195",
+      light: "#f7e14f",
+      main: "#ebcd09",
+      dark: "#d6be02",
+      contrastText: "#000",
+    },
+    error: {
+      light: "#e57373",
+      main: "#f44336",
+      dark: "#d32f2f",
       contrastText: "#fff",
     },
     text: {
-      primary: "#FFF",
-      secondary: "rgb(200,200,200)",
+      primary: "#ebcd09",
+      secondary: "#4088b8",
+      disabled: "rgba(0, 0, 0, 0.5)",
+      hint: "rgba(0, 0, 0, 0.5)",
     },
     action: {
       disabled: "rgb(70,70,70)",

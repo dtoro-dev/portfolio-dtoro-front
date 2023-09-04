@@ -59,7 +59,7 @@ const Menu = ({ homeIsActive }) => {
 
   return (
     <div
-      sx={{
+      style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -77,9 +77,11 @@ const Menu = ({ homeIsActive }) => {
             <Tab
               disableRipple
               sx={{
+                fontWeight: "700",
                 transition: ".3s",
+                color: isDarkMode ? theme.palette.primary.light : theme.palette.primary.dark,
                 "&:hover": {
-                  color: isDarkMode ? "black" : "#c2833e",
+                  color: isDarkMode ? theme.palette.primary.main : theme.palette.primary.main,
                 },
               }}
               custom={index}

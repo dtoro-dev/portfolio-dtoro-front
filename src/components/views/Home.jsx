@@ -4,7 +4,9 @@ import { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 // import { Link } from "react-scroll";
 import VideoLogo from "../../components/common/VideoLogo";
-import loaderContext from "../../contexts/loaderContext";
+import LoaderContext from "../../contexts/loaderContext";
+import ThemeContext from "../../contexts/themeContext";
+import VideoLogoLight from "../common/VideoLogoLight";
 import HomeContainer from "../containers/HomeContainer";
 
 const Home = () => {
@@ -21,7 +23,8 @@ const Home = () => {
       },
     },
   };
-  const { isLoading } = useContext(loaderContext);
+  const { isLoading } = useContext(LoaderContext);
+  const { isDarkMode } = useContext(ThemeContext);
   const controls = useAnimation();
   const { t } = useTranslation();
 
@@ -40,33 +43,33 @@ const Home = () => {
   return (
     <HomeContainer id="home">
       <div>
-         <Typography
+        <Typography
           component={motion.div}
           animate={controls}
           custom={0}
-          color="secondary"
+          color="primary"
           variant="h5"
           sx={{ marginBottom: "0px" }}
         >
           {t("home_welcome")}
           <motion.div
             style={{ display: "inline-block" }}
-            animate={{ rotate: [50, 90, 50] }}
+            animate={{ rotate: [-30, 30, -30] }}
             transition={{ repeat: Infinity, duration: 1.4, repeatDelay: 0.7 }}
           >
-            👋
+            🖐️
           </motion.div>
           , {t("home_i")}
         </Typography>
         <motion.div animate={controls} custom={1}>
-          <VideoLogo />
+          {isDarkMode ? <VideoLogo /> : <VideoLogoLight />}
         </motion.div>
         <Typography
           component={motion.p}
           animate={controls}
           custom={2}
           variant="h3"
-          color="secondary"
+          color="primary"
           sx={classes.subTitle}
         >
           {t("home_what_i_do")}
@@ -76,7 +79,7 @@ const Home = () => {
           animate={controls}
           custom={3}
           variant="body2"
-          color="secondary"
+          color={isDarkMode ? "primary.light" : "primary.dark"}
           sx={{ marginBottom: "0" }}
         >
           {t("home_job")}
@@ -86,7 +89,7 @@ const Home = () => {
           animate={controls}
           custom={4}
           variant="body1"
-          color="secondary"
+          color={isDarkMode ? "primary.light" : "primary.dark"}
           sx={{ marginBottom: "30px" }}
         >
           {t("home_location")}
@@ -94,8 +97,8 @@ const Home = () => {
         <motion.div animate={controls} custom={5}>
           <Button
             // component={Link}
-            spy
-            smooth
+            spy="true"
+            smooth="true"
             offset={0}
             duration={500}
             to="contact"
@@ -105,7 +108,7 @@ const Home = () => {
           >
             {t("home_contact_btn")}
           </Button>
-        </motion.div> 
+        </motion.div>
       </div>
     </HomeContainer>
   );

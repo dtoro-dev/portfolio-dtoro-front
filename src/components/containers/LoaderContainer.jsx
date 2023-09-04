@@ -1,26 +1,28 @@
 
+import { useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import React, { useContext } from "react";
 import LoaderContext from "../../contexts/loaderContext";
 
-const classes = {
-  container: {
-    position: "fixed",
-    width: "100%",
-    height: "100vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#e3ddcf",
-    zIndex: 10000,
-  },
-  content: {
-    margin: "0 auto",
-  },
-};
-
 const LoaderContainer = ({ children }) => {
+  const theme = useTheme();
   const { setIsLoading } = useContext(LoaderContext);
+  const classes = {
+    container: {
+      position: "fixed",
+      width: "100%",
+      height: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: theme.palette.background.default,
+      zIndex: 10000,
+    },
+    content: {
+      margin: "0 auto",
+    },
+  };
+
   return (
     <motion.div
       initial={{

@@ -11,7 +11,7 @@
     "name": "Projects",
     "description": "Page of projects",
     "to": "/projects",
-    "label": "menu_project"
+    "label": "menu_projects"
   },
   {
     "id": 3,
