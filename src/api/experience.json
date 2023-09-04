@@ -6,7 +6,7 @@
     "fromDate": "06/2017",
     "toDate": "05/2019",
     "project": false,
-    "description": "El cargo desempeñado en el área de Tecnología como Técnico Analista de Sistemas constaba de analizar, modificar y crear nuevos módulos, en un ERP llamado FrountAccounting construido en php, que contiene componentes basados en archivos php con componentes predefinido texto, botones, títulos, implementar nuevos Themes para la app. El 'frontend' se definía al momento que explicaban la tarea, todo esto en un formato 'analógico' con una pizarra, a su vez, se nos explicaba como debería interactuar el frontend con la base de datos, si se creaba o se realizaban modificaciones. La base de datos, al igual que el código, se encontraba montada en un servidor físico, con apache y mysql, utilizábamos phpmyadmin o heidi sql. Se nos asignaba un tiempo de desarrollo, que podría variar entre 1 a 2 semanas, con diagrama de flujos, según la necesidad del área de logística, de los usuarios que realizaban inventario o de la jefatura, se crearon y mejoraron módulos ya integrados en el ERP de compra, venta, contabilidad, bodega, inventario, despacho, configuraciones, gestión de usuarios con un módulo de asignación de permisos. Migramos el módulo de facturación. Se generaron procedimientos de almacenado en PL/SQL que trabajaría junto a las órdenes de compra, agrupando todas las solicitudes de esta, aparte de generar funciones que optimizaran el ERP. Todo esto desarrollado en un ambiente prueba, con el fin de mejorar el ambiente de producción ya implementado para la migración de su antiguo sistema basado COBOL, preparándolo para los distintos locales de la empresa (TIP-TOP / GELATO´S). Por cada módulo, realicé capacitaciones presenciales al personal de la empresa, demostrando funcionalidad y aplicando la práctica, además de asistencias a los usuarios en puestos de trabajo, así poder analizar posibles mejoras de rendimientos por módulos",
+    "description": "Me desempeñe en el área de sistemas, desarrollando sobre el ERP FrountAccounting creando y modificando módulos de compra y venta, contabilidad, bodega e inventario, despacho y configuraciones de este.Conocimientos del prototipo de facturación que imparte  SII a empresas. Se generaron procedimientos de almacenado en PL/SQL que trabajaría junto a las órdenes de compra, agrupando todas las solicitudes de esta, aparte de generar funcionesque optimizaran el ERP. Todo esto desarrollado en un ambiente prueba, con el fin de mejorar el ambiente de producción ya implementado para la migración de su antiguo sistema basado COBOL, preparándolo para los distintos locales de la empresa (TIP-TOP / GELATO´S). Por cada módulo, realicé capacitaciones presenciales al personal de la  empresa demostrando funcionalidad y aplicando la práctica, además de asistencias a los usuarios en puestos de trabajo, así poder analizar posibles mejoras de rendimientos por módulos.",
     "references": [
       {
         "name": "Michael Martinez",
@@ -14,15 +14,10 @@
         "email": null,
         "active": true
       }
-    ],
-    "links": {
-      "website": "https://www.codehub.tn",
-      "facebook": "https://www.facebook.com/codehubtn/",
-      "instagram": "https://www.instagram.com/codehub.coworking/"
-    }
+    ]
   },
   {
-    "id": 2,
+    "id": 1,
     "company": "automovilclub",
     "jobTitle": "Analista de sistemas FullStack",
     "fromDate": "05/2019",
@@ -34,14 +29,13 @@
     }
   },
   {
-    "id": 1,
-    "company": "vapoter.tn",
-    "jobTitle": "Analista de sistemas FullStack",
-    "fromDate": "06/2017",
-    "toDate": "06/2019",
-    "description": "Participe en un proyecto, como fullstack, en el desarrollo de distintos sistemas híbridos, sistemas escuela internos y desarrollando módulos, entre los sistemas que desarrolle, se encuentra la credencial virtual de socios de Automóvil Club Chile y un gestor de convenios con empresas externas, el que apoya en la gestion a los participantes de distintos cursos de conducción, capacitaciones y entre otras actividades que incluya la promocion ofrecida por el sponsor descrito en la siguiente lista. Además de formar parte de la toma de decisiones del holding de Automóvil club y sus distintas empresas. Al comienzo trabajé fuertemente con el área de marketing utilizando el gestor de contenidos de Modyo junto a las jefaturas del área, dando apoyo al nuevo proyecto para la corredora de seguros que forma parte de automóvil club (MACC corredora de seguros), utilizamos CRM para administrar y guardar la información ingresada por todos los formularios mantenidos en la página de automovilclub.cl. Realice una instalación de Moodle, para utilizarlo un tipo classroom para los alumnos que participaban de las clases de conducción online",
-    "links": {
-      "instagram": "https://www.instagram.com/vapoter.tn/"
-    }
+    "id": 2,
+    "company": "Fabrimetal S.A.",
+    "jobTitle": "Ingeniero en Desarrollo (Remoto En Pandemia)",
+    "fromDate": "10/2019",
+    "toDate": "08/2020",
+    "project": false,
+    "description": "Empresa de arquitectura de ascensores certificada por Kone, en donde me desempeñe en el área de servicios e informática, cargo de Ingeniero en Desarrollo Full Stack. Desarrollamos módulos y correcciones de las diferentes plataformas incorporadas a la empresa, realizando propuestas innovadoras para mejorar la experiencia del usuario al momento de desempeñar su trabajo. En base a un requerimiento para mayor control de la información ante los usuarios, desarrolle Pandora, un sistema que incorpora seguridad, control de permisos, asignación de perfiles, creación de secciones y módulos automáticosmejorando la experiencia en desarrollo del programador, basados en PHP nativo, JavaScript,JQuery, Gentelella e incorpora librerías propias de componentes. Asistí en soporte con usuarios, capacitaciones, manuales digitales, asistencia en redes, creación de credenciales con asignación de permisos, documentación. Se realizaron propuestas para unificar lossistemas, dando inicio la migración a pandora en forma de propuesta, reforzando seguridad y control de información, además de la implementación de una caja de aplicaciones en donde los usuarios podrían encontrar todas las aplicaciones de la empresa en una misma plataforma. Durante el periodo de cuarentena, nos comenzamos con teletrabajo y para su control creamos una bitácora laboral, en donde el trabajador debía ingresar sus actividadesdiarias o tomar las asignadas por el jefeencargado del área, y para el asegurar el uso se nosasignaron tareas de controller para asistir al usuario en su uso.",
+    "links": {}
   }
 ]
