@@ -1,32 +1,28 @@
 import { KeyboardArrowDownSharp } from "@mui/icons-material";
 import { Button, Menu, MenuItem, useTheme } from "@mui/material";
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
+import languages from "../../../api/languages.json";
+import ThemeContext from "../../../contexts/themeContext";
 import i18n from "../../../i18n";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
-const languages = [
-  {
-    code: "es",
-    name: "ES",
-    country_code: "es",
-  },
-  {
-    code: "us",
-    name: "EN",
-    country_code: "us",
-  },
-];
-
 const LangSelector = (props) => {
   const theme = useTheme();
+  const { isDarkMode } = useContext(ThemeContext);
   const classes = {
-    profileMenu: {},
+    profileMenu: {
+      background: "transparent",
+    },
     menuItem: {
-      backgroundColor: theme.palette.background.paper,
+      // backgroundColor: theme.palette.primary.main,
+      // color: theme.palette.primary.main,
+      fontWeight: "bold",
+      color: theme.palette.background.default,
+      background: theme.palette.primary.main,
       "&:hover": {
-        backgroundColor: theme.palette.background.default,
-      },
+        background: theme.palette.primary.light,
+      }
     },
     flagIcon: {
       marginRight: theme.spacing(1),
@@ -48,10 +44,10 @@ const LangSelector = (props) => {
     <div {...props}>
       <Button
         variant="contained"
-        sx={{
-          backgroundColor: theme.palette.background.default,
-        }}
         onClick={(e) => setAnchorEl(e.currentTarget)}
+        style={{
+          color: theme.palette.background.default,
+        }}
       >
         {currentLanguage && (
           <>
@@ -69,27 +65,23 @@ const LangSelector = (props) => {
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={() => setAnchorEl(null)}
-        keepMounted
-        elevation={0}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "center",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "center",
-        }}
         sx={classes.profileMenu}
-        disableScrollLock
       >
-        <MenuItem sx={classes.menuItem} onClick={() => handleClose("us")}>
-          <span className="fi fi-us" sx={classes.flagIcon} />
-          EN
-        </MenuItem>
-        <MenuItem sx={classes.menuItem} onClick={() => handleClose("es")}>
-          <span className="fi fi-es" sx={classes.flagIcon} />
-          ES
-        </MenuItem>
+        {languages.map((lenguage, index) => {
+          return (
+            <MenuItem
+              key={index}
+              sx={classes.menuItem}
+              onClick={() => handleClose(lenguage.code)}
+            >
+              <span
+                className={`fi fi-${lenguage.code}`}
+                style={classes.flagIcon}
+              />
+              {lenguage.name}
+            </MenuItem>
+          );
+        })}
       </Menu>
     </div>
   );

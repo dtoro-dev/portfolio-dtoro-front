@@ -1,9 +1,15 @@
-import React from 'react'
+import { useTranslation } from "react-i18next";
+import MessageBox from "../common/MessageBox";
+import SectionContainer from "../containers/SectionContainer";
 
-const Contacts = () => {
+const Contact = () => {
+  const { t } = useTranslation();
+
   return (
-    <div>Contacts</div>
-  )
-}
+    <SectionContainer id="contact" title={t('menu_contact')} maxWidth="sm" reverse>
+      <MessageBox />
+    </SectionContainer>
+  );
+};
 
-export default Contacts
+export default Contact;

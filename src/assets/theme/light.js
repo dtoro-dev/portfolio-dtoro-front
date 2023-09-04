@@ -5,13 +5,13 @@ export const lightTheme = createTheme({
   palette: {
     type: "light",
     background: {
-      paper: "#ccede7",
+      paper: "#92d6ca",
       default: "#ccede7",
     },
     primary: {
       light: "#4ead9c",
       main: "#008c73",
-      dark: "#09b898",
+      dark: "#065e4e",
       contrastText: "#000",
     },
     secondary: {

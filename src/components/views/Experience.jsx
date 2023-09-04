@@ -1,9 +1,15 @@
-import React from 'react'
+import { useTranslation } from "react-i18next";
+import Tabs from "../common/Tabs";
+import SectionContainer from "../containers/SectionContainer";
 
 const Experience = () => {
-  return (
-    <div>Experience</div>
-  )
-}
+  const { t } = useTranslation();
 
-export default Experience
+  return (
+    <SectionContainer id="experience" title={t('menu_experience')} maxWidth="sm" padding="120" reverse>
+      <Tabs />
+    </SectionContainer>
+  );
+};
+
+export default Experience;

@@ -14,7 +14,7 @@ const VideoLogo = (props) => {
       position: "relative",
       width: "300px",
       height: "68px",
-      [theme.breakpoints.down("xs")]: {
+      "@media (maxWidth:0.05px)": {
         width: "230px",
         height: "53px",
       },
@@ -26,7 +26,7 @@ const VideoLogo = (props) => {
       left: 0,
       right: 0,
       width: "100%",
-      [theme.breakpoints.down("xs")]: {
+      "@media (maxWidth:0.05px)": {
         width: "230px",
         height: "52px",
       },
@@ -39,12 +39,13 @@ const VideoLogo = (props) => {
       right: "1px",
       width: "100%",
       height: "auto",
-      [theme.breakpoints.down("xs")]: {
+      "@media (maxWidth:0.05px)": {
         width: "228px",
         height: "52px",
       },
     },
   };
+
   return (
     <div style={classes.wrapper} {...props}>
       <VideoMask style={classes.mask} />

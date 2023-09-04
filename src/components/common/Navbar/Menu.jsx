@@ -77,14 +77,15 @@ const Menu = ({ homeIsActive }) => {
             <Tab
               disableRipple
               sx={{
-                transition: ".5s",
-                color: theme.palette.secondary,
+                fontWeight: "700",
+                transition: ".3s",
+                color: isDarkMode ? theme.palette.primary.light : theme.palette.primary.dark,
                 "&:hover": {
-                  color: theme.palette.primary,
+                  color: isDarkMode ? theme.palette.primary.main : theme.palette.primary.main,
                 },
               }}
-              // custom={index}
-              // animate={controls}
+              custom={index}
+              animate={controls}
               to={section.to}
               label={t(section.label)}
             />

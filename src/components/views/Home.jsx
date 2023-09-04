@@ -47,17 +47,17 @@ const Home = () => {
           component={motion.div}
           animate={controls}
           custom={0}
-          color="secondary"
+          color="primary"
           variant="h5"
           sx={{ marginBottom: "0px" }}
         >
           {t("home_welcome")}
           <motion.div
             style={{ display: "inline-block" }}
-            animate={{ rotate: [50, 90, 50] }}
+            animate={{ rotate: [-30, 30, -30] }}
             transition={{ repeat: Infinity, duration: 1.4, repeatDelay: 0.7 }}
           >
-            👋
+            🖐️
           </motion.div>
           , {t("home_i")}
         </Typography>
@@ -79,7 +79,7 @@ const Home = () => {
           animate={controls}
           custom={3}
           variant="body2"
-          color="secondary"
+          color={isDarkMode ? "primary.light" : "primary.dark"}
           sx={{ marginBottom: "0" }}
         >
           {t("home_job")}
@@ -89,7 +89,7 @@ const Home = () => {
           animate={controls}
           custom={4}
           variant="body1"
-          color="secondary"
+          color={isDarkMode ? "primary.light" : "primary.dark"}
           sx={{ marginBottom: "30px" }}
         >
           {t("home_location")}
@@ -97,8 +97,8 @@ const Home = () => {
         <motion.div animate={controls} custom={5}>
           <Button
             // component={Link}
-            spy
-            smooth
+            spy="true"
+            smooth="true"
             offset={0}
             duration={500}
             to="contact"
