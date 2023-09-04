@@ -22,5 +22,11 @@
     "color": "primary",
     "icon": "Email",
     "href": "mailto:dtoro.a.s@gmail.com"
+  },
+  {
+    "label": "Whatsapp",
+    "color": "primary",
+    "icon": "Whatsapp",
+    "href": "https://wa.me/56966020227"
   }
 ]

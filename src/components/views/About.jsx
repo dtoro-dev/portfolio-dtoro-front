@@ -37,7 +37,13 @@ const About = () => {
           style={{ flexDirection: "column", alignItems: "space-around" }}
         >
           <Box mb={4}>
-            <Typography color={isDarkMode ? "primary.light" : "primary.dark"} variant="body1">{t("about_desc")}</Typography>
+            <Typography
+              color={isDarkMode ? "primary.light" : "primary.dark"}
+              variant="body1"
+              sx={{textAlign: "justify"}}
+            >
+              {t("about_desc")}
+            </Typography>
           </Box>
           <Skills />
         </Grid>

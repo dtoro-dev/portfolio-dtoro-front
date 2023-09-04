@@ -12,11 +12,14 @@ import Language from "@mui/icons-material/Language";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export {
   AddIcon,
   ArrowDownward,
-  ClassIcon, CloseIcon, DarkModeIcon,
+  ClassIcon,
+  CloseIcon,
+  DarkModeIcon,
   EmailIcon,
   Facebook,
   FolderSharedIcon,
@@ -25,6 +28,7 @@ export {
   Language,
   LightModeIcon,
   LinkedInIcon,
-  MenuIcon
+  MenuIcon,
+  WhatsAppIcon
 };
 
