@@ -14,6 +14,7 @@ const MessageBox = () => {
     },
     submitBtn: {
       width: "200px",
+      color: "white",
     },
   };
   const [sending, setSending] = useState(false);
