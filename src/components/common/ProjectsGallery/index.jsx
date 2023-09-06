@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import { AnimatePresence, LayoutGroup } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -7,6 +7,8 @@ import Card from "./Card";
 import ExtendedCard from "./ExtemdedCard";
 
 const ProjectsGallery = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const classes = {
     galleryContainer: {
       overflow: "visible",
@@ -23,7 +25,7 @@ const ProjectsGallery = () => {
   const getSelected = (id) => projectList.find((elem) => elem.id === id);
   return (
     <LayoutGroup type="crossfade">
-      <Grid container spacing={4} sx={classes.galleryContainer}>
+      <Grid container spacing={isMobile ? 3 : 0} sx={classes.galleryContainer}>
         {projectList.map((item, k) => (
           <Grid
             item
