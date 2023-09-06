@@ -9,6 +9,7 @@ import {
   GitHubIcon,
   LightModeIcon,
   LinkedInIcon,
+  WhatsAppIcon
 } from "./components/common/Icons";
 import ThemeContext from "./contexts/themeContext";
 
@@ -47,10 +48,16 @@ const Routing = () => {
       href: "mailto:dtoro.a.s@gmail.com",
     },
     {
+      label: "Whatsapp",
+      color: "primary",
+      icon: <WhatsAppIcon />,
+      href: "https://wa.me/56966020227",
+    },
+    {
       label: "Mode Dark / Light",
       color: "primary",
       icon: !isDarkMode ? <LightModeIcon /> : <DarkModeIcon />,
-      onClick: () => setIsDarkMode(!isDarkMode)
+      onClick: () => setIsDarkMode(!isDarkMode),
     },
   ];
 

@@ -1,37 +1,39 @@
 import {
   Box,
-  Link,
   Tab,
   Tabs,
   Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
-import experienceList from "../../api/experience.json";
+import experience from "../../api/experience";
+import ThemeContext from "../../contexts/themeContext";
 
 const StyledTabs = () => {
   const theme = useTheme();
+  const { isDarkMode } = useContext(ThemeContext);
   const { t } = useTranslation();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const classes = {
     root: {
       flexGrow: 1,
-      backgroundColor: theme.palette.background.main,
       display: "flex",
       width: "100%",
       height: "100%",
-      flexDirection: (props) => (props.isMobile ? "column" : "row"),
+      flexDirection: isMobile ? "column" : "row",
     },
     tabs: {
-      borderRight: (props) =>
-        props.isMobile ? "none" : `1px solid ${theme.palette.secondary.main}`,
-      borderBottom: (props) =>
-        !props.isMobile ? "none" : `1px solid ${theme.palette.secondary.main}`,
-      width: (props) => (props.isMobile ? "inherit" : "200px"),
-      maxWidth: (props) => (props.isMobile ? "inherit" : "200px"),
-      minWidth: (props) => (props.isMobile ? "inherit" : "200px"),
+      borderRight: isMobile
+        ? "none"
+        : `1px solid ${theme.palette.primary.light}`,
+      borderBottom: isMobile
+        ? "none"
+        : `1px solid ${theme.palette.primary.light}`,
+      width: isMobile ? "100%" : "200px",
+      maxWidth: isMobile ? "100%" : "200px",
+      minWidth: isMobile ? "100%" : "200px",
     },
     indicator: {
       backgroundColor: "red",
@@ -50,30 +52,42 @@ const StyledTabs = () => {
         value={value}
         onChange={handleChange}
         sx={classes.tabs}
-        classes={{ indicator: classes.indicator }}
         centered
+        variant="scrollable"
+        scrollButtons
+        allowScrollButtonsMobile
       >
-        {experienceList.map((elem) => (
-          <Tab label={elem.company} key={elem.id} />
+        {experience.map((elem) => (
+          <Tab
+            color={isDarkMode ? "primary.light" : "primary.dark"}
+            label={elem.company}
+            key={elem.id}
+          />
         ))}
       </Tabs>
-      {experienceList.map((elem) => (
+      {experience.map((elem) => (
         <TabPanel value={value} index={elem.id} key={elem.id}>
           <Box mb={4}>
-            <Typography variant="h5">
-              {t(`experience_${elem.id}_job`)} @{" "}
-              <Link
-                color="primary"
-              >
-                {elem.company}
-              </Link>
+            <Typography
+              color={isDarkMode ? "primary.light" : "primary.dark"}
+              variant="h5"
+            >
+              {t(`experience_${elem.id}_job`)} @ {elem.company}
             </Typography>
-            <Typography variant="body2" color="textSecondary" fontSize="14">
-              {t(`experience_${elem.id}_duration`)}
+            <Typography
+              color={isDarkMode ? "primary.light" : "primary.dark"}
+              variant="body2"
+              fontSize="14"
+            >
+              {`${elem.fromDate} - ${elem.toDate}`}
             </Typography>
           </Box>
-          <Box mb={4}>
-            <Typography variant="body1" color="textPrimary">
+          <Box mb={4} width={isMobile ? "100%" : "90%"}>
+            <Typography
+              color={isDarkMode ? "primary.light" : "primary.dark"}
+              variant="body1"
+              sx={{ textAlign: "justify" }}
+            >
               {t(`experience_${elem.id}_overview`)}
             </Typography>
           </Box>
