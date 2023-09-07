@@ -1,4 +1,4 @@
-import { Button, Typography, useTheme } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
 import { useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -94,7 +94,7 @@ const Home = () => {
         >
           {t("home_location")}
         </Typography>
-        <motion.div animate={controls} custom={5}>
+        {/* <motion.div animate={controls} custom={5}>
           <Button
             // component={Link}
             spy="true"
@@ -108,7 +108,7 @@ const Home = () => {
           >
             {t("home_contact_btn")}
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </HomeContainer>
   );

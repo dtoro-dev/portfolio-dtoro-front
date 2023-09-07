@@ -1,24 +1,44 @@
-import { Tab, Tabs, useTheme } from "@mui/material";
+import { Button, Link as MuiLink, Tab, Tabs, useTheme } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
+import { forwardRef, useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Events } from "react-scroll";
-import sections from "../../../api/menu.json";
+import { Events, Link } from "react-scroll";
+import sections from "../../../api/sections";
 import LoaderContext from "../../../contexts/loaderContext";
-import ThemeContext from "../../../contexts/themeContext";
 import LangSelector from "./LangSelector";
+
+const smoothScrollProps = {
+  spy: true,
+  smooth: true,
+  offset: -70,
+  duration: 500,
+};
+
+const AnimatedLink = forwardRef((props, ref) => (
+  <motion.div ref={ref} custom={props.custom} animate={props.animate}>
+    <Link {...smoothScrollProps} {...props} />
+  </motion.div>
+));
 
 const Menu = ({ homeIsActive }) => {
   const theme = useTheme();
+  const { isLoading } = useContext(LoaderContext);
   const [value, setValue] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
-  const { isLoading } = useContext(LoaderContext);
-  const { isDarkMode} = useContext(ThemeContext)
   const controls = useAnimation();
   const { t } = useTranslation();
   const classes = {
+    wrapper: {
+      display: "flex",
+      alignItems: "center",
+    },
     tabs: {
       marginRight: theme.spacing(4),
+      indicator: {
+        "& > span": {
+          maxWidth: 20,
+        },
+      },
     },
     navMenuItem: {
       marginRight: theme.spacing(1),
@@ -51,6 +71,12 @@ const Menu = ({ homeIsActive }) => {
     setValue(newValue);
   };
 
+  const spyHandleChange = (index) => {
+    if (!isScrolling) {
+      setValue(index);
+    }
+  };
+
   useEffect(() => {
     if (homeIsActive) {
       setValue(false);
@@ -58,43 +84,79 @@ const Menu = ({ homeIsActive }) => {
   }, [homeIsActive]);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <div style={classes.wrapper}>
       <Tabs
-        sx={classes.tabs}
-        variant="fullWidth"
-        TabIndicatorProps={{ children: <span /> }}
+        style={classes.tabs}
         value={value}
+        indicatorColor="primary"
+        textColor="primary"
         onChange={handleChange}
+        TabIndicatorProps={{ children: <span /> }}
       >
-        {sections.map((section, index) => (
-          <motion.div key={index} custom={index} animate={controls}>
-            <Tab
-              disableRipple
-              sx={{
-                fontWeight: "700",
-                transition: ".3s",
-                color: isDarkMode ? theme.palette.primary.light : theme.palette.primary.dark,
-                "&:hover": {
-                  color: isDarkMode ? theme.palette.primary.main : theme.palette.primary.main,
-                },
-              }}
-              custom={index}
-              animate={controls}
-              to={section.to}
-              label={t(section.label)}
-            />
-          </motion.div>
-        ))}
-        <motion.div custom={7} animate={controls}>
-          <LangSelector style={{ marginLeft: "32px" }} />
-        </motion.div>
+        {sections.map((section, index) => {
+          if (index === 0) {
+            return (
+              <motion.div key={index} custom={index} animate={controls}>
+                <Tab
+                  key={index}
+                  component={AnimatedLink}
+                  custom={index}
+                  animate={controls}
+                  to={section.to}
+                  label={t(section.label)}
+                  onSetActive={() => spyHandleChange(index)}
+                  onSetInactive={() => spyHandleChange(false)}
+                  disableRipple
+                  sx={{
+                    transition: ".2s",
+                    minWidth: 120,
+                    "&:hover": {
+                      color: theme.palette.text.primary,
+                    },
+                  }}
+                />
+              </motion.div>
+            );
+          } else {
+            return (
+              <motion.div key={index} custom={index} animate={controls}>
+                <Tab
+                  key={index}
+                  component={AnimatedLink}
+                  custom={index}
+                  animate={controls}
+                  to={section.to}
+                  label={t(section.label)}
+                  onSetActive={() => spyHandleChange(index)}
+                  disableRipple
+                  sx={{
+                    transition: ".2s",
+                    minWidth: 120,
+                    "&:hover": {
+                      color: theme.palette.text.primary,
+                    },
+                  }}
+                />
+              </motion.div>
+            );
+          }
+        })}
       </Tabs>
+      <motion.div custom={4} animate={controls}>
+        <Button
+          component={MuiLink}
+          href="/cv.pdf"
+          target="_blank"
+          variant="outlined"
+          color="primary"
+          underline="none"
+        >
+          {t("menu_resume")}
+        </Button>
+      </motion.div>
+      <motion.div custom={5} animate={controls}>
+        <LangSelector style={{ marginLeft: "32px" }} />
+      </motion.div>
     </div>
   );
 };

@@ -6,8 +6,8 @@ import {
   useTheme,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import sections from "../../../api/menu.json";
 import LangSelector from "./LangSelector";
+import sections from "../../../api/sections"
 
 const MobileMenu = ({ open, onClose, onOpen }) => {
   const theme = useTheme();
@@ -41,7 +41,7 @@ const MobileMenu = ({ open, onClose, onOpen }) => {
       <div style={classes.list} role="presentation">
         <List sx={classes.fullList}>
           {sections.map((section, index) => (
-            <ListItem key={index} to={section.to}>
+            <ListItem key={index} href={section.to}>
               {t(section.label)}
             </ListItem>
           ))}

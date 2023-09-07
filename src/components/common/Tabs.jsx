@@ -52,8 +52,8 @@ const StyledTabs = () => {
         value={value}
         onChange={handleChange}
         sx={classes.tabs}
-        centered
-        variant="scrollable"
+        // centered
+        // variant="scrollable"
         scrollButtons
         allowScrollButtonsMobile
       >

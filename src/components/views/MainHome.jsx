@@ -2,7 +2,6 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import Background3d from "../common/Background3d";
 import About from "../views/About";
-import Contacts from "../views/Contacts";
 import Experience from "../views/Experience";
 import Home from "../views/Home";
 import Projects from "../views/Projects";
@@ -25,7 +24,7 @@ const MainHome = () => {
       <About />
       <Projects />
       <Experience />
-      <Contacts />
+      {/* <Contacts /> */}
       {!isMobile && <Background3d />}
     </motion.main>
   );

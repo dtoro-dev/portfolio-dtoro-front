@@ -1,5 +1,5 @@
 import { Paper, Typography, useTheme } from "@mui/material";
-import skillsList from "../../api/skills.json";
+import skills from "../../api/skills";
 
 const Skills = () => {
   const theme = useTheme();
@@ -20,7 +20,7 @@ const Skills = () => {
 
   return (
     <div style={classes.container}>
-      {skillsList.map((elem, k) => (
+      {skills.map((elem, k) => (
         <Paper elevation={10} key={k} sx={classes.paper}>
           <Typography style={{color: theme.palette.background.default, fontWeight: "bold"}} align="center">{elem.title}</Typography>
         </Paper>

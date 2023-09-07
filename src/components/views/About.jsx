@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <SectionContainer id="about" title={t("menu_about")} maxWidth="md">
-      <Grid container spacing={0} alignItems="center" sx={{ width: "100%" }}>
+      <Grid container alignItems="center" sx={{ width: "100%" }}>
         {isMobile && (
           <Grid item xs={12} md={5} sx={classes.gridItemWrapper}>
             <Box mb={6}>

@@ -40,12 +40,16 @@
   "experience_7_overview": "Me desempeñe en el área de sistemas, desarrollando sobre el ERP FrountAccounting creando y modificando módulos de compra y venta, contabilidad, bodega e inventario, despacho y configuraciones de este.Conocimientos del prototipo de facturación que imparte  SII a empresas. Se generaron procedimientos de almacenado en PL/SQL que trabajaría junto a las órdenes de compra, agrupando todas las solicitudes de esta, aparte de generar funcionesque optimizaran el ERP. Todo esto desarrollado en un ambiente prueba, con el fin de mejorar el ambiente de producción ya implementado para la migración de su antiguo sistema basado COBOL, preparándolo para los distintos locales de la empresa (TIP-TOP / GELATO´S). Por cada módulo, realicé capacitaciones presenciales al personal de la  empresa demostrando funcionalidad y aplicando la práctica, además de asistencias a los usuarios en puestos de trabajo, así poder analizar posibles mejoras de rendimientos por módulos.",
 
   "view_project_label_hover": "Ver Proyecto",
+  
   "projects_1_overview": "Tunflix is the tunisian Netflix.",
-  "projects_2_overview": "Code Hub is a hub for code lovers in Sousse, Tunisia",
-  "projects_3_overview": "Burpees.io is a solution for gyms.",
   "projects_1_extended_overview": "Tunflix is a streaming website: it allows you to watch movies by scraping data from the internet. The UI is modern and base on material design",
+  
+  "projects_2_overview": "Code Hub is a hub for code lovers in Sousse, Tunisia",
   "projects_2_extended_overview": "codehub.tn is a showcase website for Code Hub: a coworking space at Sousse for developers",
+  
+  "projects_3_overview": "Burpees.io is a solution for gyms.",
   "projects_3_extended_overview": "Burpees.io is a solution for gyms. you can see plannings, take reservations and more. We've developed a white labalise app: If a client wants his native application it will be generated automatically. The dashboard is for the gym owner.",
+  
   "contact_full_name": "Nombre Completo",
   "contact_email": "Dirección de correo",
   "contact_input_message": "Mensaje",

@@ -1,9 +1,30 @@
-import React from 'react'
+import { FormControlLabel, Switch } from "@mui/material";
+import React, { useContext } from "react";
+import { useTranslation } from "react-i18next";
+import ThemeContext from "../../contexts/themeContext";
 
-const DarkModeSwitcher = () => {
+const DarkModeSwitcher = ({ onClose }) => {
+  const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
+  const { t } = useTranslation();
+  
   return (
-    <div>DarkModeSwitcher</div>
-  )
-}
+    <FormControlLabel
+      control={
+        <Switch
+          checked={isDarkMode}
+          name="checkedDarkMode"
+          color="primary"
+          onChange={() => {
+            if (onClose) {
+              onClose();
+            }
+            setIsDarkMode(!isDarkMode);
+          }}
+        />
+      }
+      label={t("dark_mode")}
+    />
+  );
+};
 
-export default DarkModeSwitcher
+export default DarkModeSwitcher;
