@@ -52,8 +52,8 @@ const StyledTabs = () => {
         value={value}
         onChange={handleChange}
         sx={classes.tabs}
-        // centered
-        // variant="scrollable"
+        centered
+        variant="scrollable"
         scrollButtons
         allowScrollButtonsMobile
       >
@@ -65,6 +65,7 @@ const StyledTabs = () => {
           />
         ))}
       </Tabs>
+
       {experience.map((elem) => (
         <TabPanel value={value} index={elem.id} key={elem.id}>
           <Box mb={4}>

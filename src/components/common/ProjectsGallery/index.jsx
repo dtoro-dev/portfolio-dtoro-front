@@ -2,7 +2,7 @@ import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import { AnimatePresence, LayoutGroup } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import projectList from "../../../api/projects.json";
+import projects from "../../../api/projects";
 import Card from "./Card";
 import ExtendedCard from "./ExtemdedCard";
 
@@ -22,11 +22,11 @@ const ProjectsGallery = () => {
   const { t } = useTranslation();
   const [selectedId, setSelectedId] = useState(null);
 
-  const getSelected = (id) => projectList.find((elem) => elem.id === id);
+  const getSelected = (id) => projects.find((elem) => elem.id === id);
   return (
     <LayoutGroup type="crossfade">
       <Grid container spacing={isMobile ? 3 : 0} sx={classes.galleryContainer}>
-        {projectList.map((item, k) => (
+        {projects.map((item) => (
           <Grid
             item
             xs={12}
