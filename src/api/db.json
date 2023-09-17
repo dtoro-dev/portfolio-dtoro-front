@@ -1,0 +1,84 @@
+{
+  "setup":{
+    "firstname": "Diego",
+    "lastname": "Toro Reyes",
+    "brand": "DToroDev",
+    "logo": "",
+    "profile": ""
+  },
+  "theme": [
+    {
+      "id": 1,
+      "mode": "light",
+      "primary": {
+        "light": "#5b8bad",
+        "main": "#276492",
+        "dark": "#163954",
+        "contrastText": "#f5ffff"
+      },
+      "secondary": {
+        "light": "#FF80AB",
+        "main": "#FF4081",
+        "dark": "#F50057",
+        "contrastText": "#f5ffff"
+      },
+      "background": {
+        "default": "#c2d8e4",
+        "paper": "#276492"
+      }
+    },
+    {
+      "id": 2,
+      "mode": "dark",
+      "primary": {
+        "light": "#005f6b",
+        "main": "#343838",
+        "dark": "#5b8bad",
+        "contrastText": "#fff"
+      },
+      "secondary": {
+        "light": "#FF80AB",
+        "main": "#FF4081",
+        "dark": "#F50057",
+        "contrastText": "#fff"
+      },
+      "background": {
+        "default": "#395f61",
+        "paper": "#343838"
+      }
+    }
+  ],
+  "cv": {},
+  "pages": [
+    {
+      "id": 1,
+      "name": "Home",
+      "description": "Page Initial",
+      "to": "/"
+    },
+    {
+      "id": 2,
+      "name": "About",
+      "description": "Page Initial",
+      "to": "/about"
+    },
+    {
+      "id": 3,
+      "name": "Projects",
+      "description": "Page of projects",
+      "to": "/projects"
+    },
+    {
+      "id": 4,
+      "name": "Experience",
+      "description": "Page of experience",
+      "to": "/experience"
+    },
+    {
+      "id": 5,
+      "name": "Contact",
+      "description": "Page of contact",
+      "to": "/contact"
+    }
+  ]
+}

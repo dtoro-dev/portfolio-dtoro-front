@@ -1,0 +1,65 @@
+{
+  "language": "es",
+  "dark_mode": "Modo Oscuro",
+  "home_welcome": "Hola",
+  "home_i": "soy",
+  "home_what_i_do": "Diseño páginas web increíbles",
+  "home_job": "Desarrollador Full Stack, Freelancer y apasionado por Github.",
+  "home_location": "Ubicado en Santiago, Chile.",
+  "home_contact_btn": "Contactar",
+  "menu_home": "Inicio",
+  "menu_about": "Sobre Mi",
+  "menu_projects": "Proyectos",
+  "menu_experience": "Experiencia",
+  "menu_contact": "Contacto",
+  "menu_resume": "Resume",
+  "about_desc": "Hola, mi nombre es Diego Toro Reyes. Mi formación en análisis de sistemas me ha proporcionado un pensamiento crítico y analítico a lo largo de mi carrera profesional. Soy proactivo, innovador y comprometido. Listo para enfrentar nuevos desafíos y contribuir en mi campo profesional.",
+
+  "experience_0_job": "Consultor Técnico",
+  "experience_0_overview": "En Principal participe en el backend, especificamente para migraciones y despliegue de arquitecturas basadas en AWS. Se utilizaba AWS-CDK, que permite crear arquitecturas de servicios AWS basadas en codigo, en este caso se utilizo node ts. Fui parte de un immersion day aws, dando inicio a la capacitacion con los cursos de AWS Partner.",
+
+  "experience_1_job": "Consultor Técnico",
+  "experience_1_overview": "De manera paralela a los proyectos en los que he participado en la empresa Soaint S.A., hemos desarrollado en conjunto a un equipo de trabajo, una aplicacion de gestión. Esta app inicio con el fin de controlar los ingresos a la oficina en pandemia. Con el pasar del tiempo la aplicación tomo un giro otorgandole mas facultades, donde se pueden agregar módulos nuevos, roles, control de usuarios, agenda, solicitudes, credenciales digitales, asignación debeneficios, contempla configuración personalizada de parámetros para la aplicación, uno de estos parámetrosera, ese especificamente identificar si el estado se encontraba en pandemia, este se activaba y los controles habilitaban campos de temperaturas. Al tener roles, los perfiles que eran de los colaboradores podían ver sus beneficios tanto asignados por contratos, como beneficios negociables por gestiónHumana al momento de ser contratado. Aplicacion desarrollada con React js y Node js.",
+
+  "experience_2_job": "Consultor Técnico",
+  "experience_2_overview": "En Coopeuch, inicie labores como frontend, desarrollando la aplicación mobile, con metodología scrum. Utilizamos React Native, junto a InVision nos apoyamos para conseguir los flujos solicitados por el cliente, trabajábamos en equipo para definir cada requerimiento y asignación de tickets junto al producto owner y scrum master. Cada cierto tiempo nos cambiaban de células para asumir nuevos retos, dentro de esos estuvo el cambio al backend, donde trabaje con java y un nuevo modelo de negocio, que contemplaba servicios en la nube de amazon, control tower y plantillas de correos, las cuales también cree a partir de InVisions que entregaba el diseñador.",
+
+  "experience_3_job": "Consultor Técnico",
+  "experience_3_overview": "Las labores se desempeñaron en modalidad remota con el cliente Oracle de Brasil en la celula OCC, con una metodología ágil interna, propia de Oracle. Participe en el proyecto de Travel FAN Banco Chile, asumiendo distintos retos como frontend, desarrollando con React js.",
+
+  "experience_4_job": "Consultor Técnico",
+  "experience_4_overview": "SOAINT S.A. es una consultora, subcontratada por Esign S.A., en donde realizo distintas actividades como fullstack, apesar de que mi foco de especialidad es el desarrollo frontend de cada sistema, se integraron servicios APIs en el sistema Cloudsigneren PHP Symfony. Además de implementaciones lógicas de asignación de roles y regulación de permisos para usuarios, a uno de lossistemas nuevos de Esign para autentificación (RA - JavaScript - JavaEE). Cree el front para la compra de firma y certificados (FEA - FES) para Canje Colombia (HTML - CSS). Cada uno de los sistemas se trabajó con Git versionando cada avance. Estuve presente endistintas células internas con variados sistemas, con metodologíascrum y modalidad remota.",
+
+  "experience_5_job": "Ingeniero en Desarrollo",
+  "experience_5_overview": "Soaint S.A. es una empresa de desarrollo de software, subcontratada por Esign S.A., en donde realizo distintas actividades como fullstack, apesar de que mi foco de especialidad es el desarrollo frontend de cada sistema, se integraron servicios APIs en el sistema Cloudsigneren PHP Symfony. Además de implementaciones lógicas de asignación de roles y regulación de permisos para usuarios, a uno de lossistemas nuevos de Esign para autentificación (RA - JavaScript - JavaEE). Cree el front para la compra de firma y certificados (FEA -FES) para Canje Colombia (HTML - CSS). Cada uno de los sistemas se trabajó con Git versionando cada avance. Estuve presente endistintas células internas con variados sistemas, con metodologíascrum y modalidad remota.",
+
+  "experience_6_job": "Analista de sistemas Fullstack",
+  "experience_6_overview": "Participe en un proyecto, como fullstack, en el desarrollo de distintos sistemas híbridos, sistemas escuela internos y desarrollando módulos, entre los sistemas que desarrolle, se encuentra la credencial virtual de socios de Automóvil Club Chile y un gestor de convenios con empresas externas, el que apoya en la gestion a los participantes de distintos cursos de conducción, capacitaciones y entre otras actividades que incluya la promocion ofrecida por el sponsor descrito en la siguiente lista. Además de formar parte de la toma de decisiones del holding de Automóvil club y sus distintas empresas. Al comienzo trabajé fuertemente con el área de marketing utilizando el gestor de contenidos de Modyo junto a las jefaturas del área, dando apoyo al nuevo proyecto para la corredora de seguros que forma parte de automóvil club (MACC corredora de seguros), utilizamos CRM para administrar y guardar la información ingresada por todos los formularios mantenidos en la página de automovilclub.cl. Realice una instalación de Moodle, para utilizarlo un tipo classroom para los alumnos que participaban de las clases de conducción online.",
+
+  "experience_7_job": "Analista de sistemas Fullstack",
+  "experience_7_overview": "Me desempeñe en el área de sistemas, desarrollando sobre el ERP FrountAccounting creando y modificando módulos de compra y venta, contabilidad, bodega e inventario, despacho y configuraciones de este.Conocimientos del prototipo de facturación que imparte  SII a empresas. Se generaron procedimientos de almacenado en PL/SQL que trabajaría junto a las órdenes de compra, agrupando todas las solicitudes de esta, aparte de generar funcionesque optimizaran el ERP. Todo esto desarrollado en un ambiente prueba, con el fin de mejorar el ambiente de producción ya implementado para la migración de su antiguo sistema basado COBOL, preparándolo para los distintos locales de la empresa (TIP-TOP / GELATO´S). Por cada módulo, realicé capacitaciones presenciales al personal de la  empresa demostrando funcionalidad y aplicando la práctica, además de asistencias a los usuarios en puestos de trabajo, así poder analizar posibles mejoras de rendimientos por módulos.",
+
+  "view_project_label_hover": "Ver Proyecto",
+  "view_project_github_label_hover": "Ver en GitHub",
+  "show_all_projects": "Ver más",
+  "go_back_home": "Volver",
+
+  "projects_1_overview": "Examen AWS Cloud Practitioner",
+  "projects_1_extended_overview": "Preguntas de ejemplo sobre el examen CA-01 de AWS cloud practitioner.",
+  
+  "projects_2_overview": "Tetris-Phunk es el clásico tetris, el cual de momento solo funciona en navegadores de escritorio.",
+  "projects_2_extended_overview": "Tetris-Phunk es el clásico tetris, el cual de momento solo funciona en navegadores de escritorio.",
+  
+  "projects_3_overview": "Portal Soainters, implementa parte de la logica de pandora con modulos o secciones.",
+  "projects_3_extended_overview": "Portal, implementa parte de la logica de pandora con modulos o secciones (menu) -> roles -> usuarios, tiene como finalidad realizar el registro de los eventos por medio del calendario, generar el ingreso visita a la oficina, crear nuevos usuario, gestor de beneficios, consulta de beneficios, recciones a beneficios, credencial digital que a través de un QR, podria acreditar que es colaborador en la empresa, además de un dashboard que muestra los indicadores de los beneficios con más likes y vistas e histórico de agendamiento, los beneficios con menos likes, generación de reportes de las actividades realizadas en el portal a través de logs y reporte de ingreso. Además, se le envía correo al usuario cuando se restablece la clave, se realiza un ingreso de usuario nuevo, consulta de beneficio y agendamiento evento.",
+
+  "projects_4_overview": "Pandora",
+  "projects_4_extended_overview": "Pandora es una pequeña app, codificada en PHP, javascript, jquery, bootstrap y Gentella Alella, el que adapte sus componentes en funciones para escribir el frontend con php tambien. Crea Modulos, comparte modulos con dinstintas apps pandora, roles, asignacion de modulos a los roles, asi controlar la visualizacion del usuario. Si desea ver de que trata, favor de avisar con anticipación, ya que su repositorio es privado.",
+  
+  
+  "contact_full_name": "Nombre Completo",
+  "contact_email": "Dirección de correo",
+  "contact_input_message": "Mensaje",
+  "contact_btn": "Enviar Mensaje",
+  "contact_send_success": "Tu mensaje ha sido enviado exitosamente, te responderé lo antes posible."
+}

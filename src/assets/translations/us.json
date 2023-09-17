@@ -1,0 +1,64 @@
+{
+  "language": "us",
+  "dark_mode": "Dark mode",
+  "home_welcome": "Hi there",
+  "home_i": "i'm",
+  "home_what_i_do": "I design amazing web pages",
+  "home_job": "Full Stack developer, Freelancer and passionate about Github.",
+  "home_location": "Based in Santiago, Chile.",
+  "home_contact_btn": "Get in touch",
+  "menu_home": "Home",
+  "menu_about": "About",
+  "menu_projects": "Projects",
+  "menu_experience": "Experience",
+  "menu_contact": "Contact",
+  "menu_resume": "Resume",
+  "about_desc": "Hello, my name is Diego Toro Reyes. My education in systems analysis has provided me with critical and analytical thinking throughout my professional career. I am proactive, innovative, and committed. Ready for new challenges and to contribute in my professional field.",
+ 
+  "experience_0_job": "Technical Consultant",
+  "experience_0_overview": "In Principal I participated in the backend, specifically for migrations and deployment of AWS based architectures. AWS-CDK was used, which allows creating AWS service architectures based on code, in this case node ts was used. I was part of an aws immersion day, starting the training with the AWS Partner courses.",
+
+  "experience_1_job": "Technical Consultant",
+  "experience_1_overview": "Parallel to the projects in which I have participated in the company Soaint S.A., we have jointly developed a work team, a management application. This app started in order to control income to the office in a pandemic. With the passing of time, the application took a turn, granting it more faculties, where you can add new modules, roles, user control, agenda, requests, digital credentials, assignment of benefits, contemplate custom configuration of parameters for the application, one of these parameters was , that specifically identify if the state was in a pandemic, this was activated and the controls enabled temperature fields. By having roles, the profiles that belonged to the collaborators could see their benefits both assigned by contracts, and negotiable benefits by Human Management at the time of being hired. Application developed with React js and Node js.",
+
+  "experience_2_job": "Technical Consultant",
+  "experience_2_overview": "At Coopeuch, I started working as a frontend, developing the mobile application, with scrum methodology. We use React Native, together with InVision we support each other to achieve the flows requested by the client, we worked as a team to define each requirement and assign tickets together with the product owner and scrum master. From time to time they changed our cells to take on new challenges, among those was the change to the backend, where I worked with Java and a new business model, which included Amazon cloud services, control tower and email templates, which he also creates from InVisions that the designer delivered.",
+
+  "experience_3_job": "Technical Consultant",
+  "experience_3_overview": "The tasks were carried out remotely with the client Oracle of Brazil in the OCC cell, with an internal agile methodology, typical of Oracle. Participate in the Travel FAN Banco Chile project, assuming different challenges as a frontend, developing with React js.",
+
+  "experience_4_job": "Technical Consultant",
+  "experience_4_overview": "SOAINT S.A. is a consultancy, subcontracted by Esign S.A., where I carry out different activities as fullstack, despite the fact that my specialty focus is the frontend development of each system, API services were integrated into the Cloudsigneren PHP Symfony system. In addition to logical implementations of role assignment and regulation of permissions for users, to one of Esign's new systems for authentication (RA - JavaScript - JavaEE). Create the front for the purchase of signature and certificates (FEA - FES) for Canje Colombia (HTML - CSS). Each of the systems was worked with Git versioning each advance. I was present in different internal cells with various systems, with scrum methodologies and remote modality.",
+
+  "experience_5_job": "Development Engineer",
+  "experience_5_overview": "Elevator architecture company certified by Kone, where I worked in the services and IT area, in the position of Full Stack Development Engineer. We develop modules and corrections for the different platforms incorporated into the company, making innovative proposals to improve the user experience when carrying out their work. Based on a requirement for greater control of information before users, I developed Pandora, a system that incorporates security, permission control, profile assignment, creation of sections and automatic modules, improving the development experience of the programmer, based on native PHP , JavaScript, JQuery, Gentelella and incorporates its own component libraries. I assisted in user support, training, digital manuals, network assistance, creation of credentials with permission assignment, documentation. Proposals were made to unify the systems, beginning the migration to Pandora in the form of a proposal, reinforcing security and control of information, in addition to the implementation of an application box where users could find all the company's applications in the same platform. During the quarantine period, we started teleworking and for its control we created a work log, where the worker had to enter their daily activities or take those assigned by the boss in charge of the area, and to ensure the use we were assigned controller tasks to assist the user in its use.",
+
+  "experience_6_job": "Fullstack Systems Analyst",
+  "experience_6_overview": "Participate in a project, as fullstack, in the development of different hybrid systems, internal school systems and developing modules, among the systems that I develop, is the virtual credential for Automóvil Club Chile members and an agreement manager with external companies, the that supports the management of the participants of different driving courses, training and among other activities that include the promotion offered by the sponsor described in the following list. In addition to being part of the decision making of the Automobile Club holding and its various companies. At the beginning I worked hard with the marketing area using the Modyo content manager together with the area headquarters, giving support to the new project for the insurance broker that is part of the automobile club (MACC insurance broker), we used CRM to manage and save the information entered by all the forms maintained on the automovilclub.cl page. Make an installation of Moodle, to use a classroom type for the students who participated in the online driving classes.",
+
+  "experience_7_job": "Fullstack Systems Analyst",
+  "experience_7_overview": "I worked in the systems area, developing on the ERP FrountAccounting, creating and modifying modules for purchase and sale, accounting, warehouse and inventory, dispatch and configurations of this. Knowledge of the billing prototype that SII imparts to companies. Stored procedures were generated in PL/SQL that would work together with the purchase orders, grouping all the requests for this, apart from generating functions that would optimize the ERP. All this developed in a test environment, in order to improve the production environment already implemented for the migration of its old COBOL-based system, preparing it for the different company locations (TIP-TOP / GELATO'S). For each module, I conducted face-to-face training for the company's staff demonstrating functionality and applying the practice, as well as assisting users in their jobs, thus being able to analyze possible performance improvements by modules.",
+
+  "view_project_label_hover": "View project",
+  "view_project_github_label_hover": "View on GitHub",
+  "show_all_projects": "See more",
+  "go_back_home": "Go back",
+
+  "projects_1_overview": "Exam AWS Cloud Practitioner (fake)",
+  "projects_1_extended_overview": "Sample Questions for the AWS Certified Cloud Practitioner CA-01 Exam.",
+
+  "projects_2_overview": "Tetris-Phunk is the classic Tetris, which currently only works in desktop browsers.",
+  "projects_2_extended_overview": "Tetris-Phunk is the classic Tetris, which currently only works in desktop browsers.",
+  
+  "projects_3_overview": "Portal, implementa parte de la logica de pandora con modulos o secciones (menu) -> roles -> usuarios",
+  "projects_3_extended_overview": "Portal, implements part of Pandora's logic with modules or sections (menu) -> roles -> users, its purpose is to register events through the calendar, generate office visit income, create new users, benefits manager, benefits consultation, benefit reactions, digital credential that, through a QR, could prove that you are a collaborator in the company, in addition to a dashboard that shows the benefit indicators with the most likes and views and scheduling history , the benefits with fewer likes, generation of reports of the activities carried out on the portal through logs and income reports. In addition, an email is sent to the user when the password is reset, a new user entry, benefit consultation and event scheduling are made.",
+
+  "projects_4_overview": "Pandora",
+  "projects_4_extended_overview": "Pandora is a small app, coded in PHP, JavaScript, jQuery, Bootstrap, and Gentella Alella, which adapts its components into functions to write the frontend with PHP as well. It creates modules, shares modules with different Pandora apps, manages roles, assigns modules to roles to control user visibility. If you would like to see what it's about, please let us know in advance, as its repository is private.",
+
+  "contact_full_name": "Full name",
+  "contact_email": "E-mail adress",
+  "contact_input_message": "Message",
+  "contact_btn": "Send message",
+  "contact_send_success": "Your message has been successfully sent, i'll reply as soon as possible."
+}
