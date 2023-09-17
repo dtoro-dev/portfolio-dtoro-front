@@ -42,7 +42,7 @@
     "@vitejs/plugin-react-swc": "3.3.2",
     "eslint": "8.45.0",
     "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-hooks": "5.0.0-canary-d6dcad6a8-20230914",
     "eslint-plugin-react-refresh": "0.4.3",
     "vite": "4.4.5"
   }

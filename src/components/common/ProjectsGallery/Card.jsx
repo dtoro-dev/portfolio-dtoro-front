@@ -104,7 +104,7 @@ const Card = ({
   useEffect(() => {
     controls.start("initial");
   }, []);
-  
+
   return (
     <MuiCard
       sx={classes.root}

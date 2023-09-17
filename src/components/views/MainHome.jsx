@@ -1,10 +1,10 @@
 import { useMediaQuery, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import Background3d from "../common/Background3d";
-import About from "../views/About";
-import Experience from "../views/Experience";
-import Home from "../views/Home";
-import Projects from "../views/Projects";
+import About from "./About";
+import Experience from "./Experience";
+import Home from "./Home";
+import Projects from "./Projects";
 
 const MainHome = () => {
   const theme = useTheme();

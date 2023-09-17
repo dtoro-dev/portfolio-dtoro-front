@@ -40,15 +40,21 @@
   "experience_7_overview": "I worked in the systems area, developing on the ERP FrountAccounting, creating and modifying modules for purchase and sale, accounting, warehouse and inventory, dispatch and configurations of this. Knowledge of the billing prototype that SII imparts to companies. Stored procedures were generated in PL/SQL that would work together with the purchase orders, grouping all the requests for this, apart from generating functions that would optimize the ERP. All this developed in a test environment, in order to improve the production environment already implemented for the migration of its old COBOL-based system, preparing it for the different company locations (TIP-TOP / GELATO'S). For each module, I conducted face-to-face training for the company's staff demonstrating functionality and applying the practice, as well as assisting users in their jobs, thus being able to analyze possible performance improvements by modules.",
 
   "view_project_label_hover": "View project",
+  "view_project_github_label_hover": "View on GitHub",
+  "show_all_projects": "See more",
+  "go_back_home": "Go back",
 
-  "projects_1_overview": "Tunflix is the tunisian Netflix.",
-  "projects_1_extended_overview": "Tunflix is a streaming website: it allows you to watch movies by scraping data from the internet. The UI is modern and base on material design",
+  "projects_1_overview": "Exam AWS Cloud Practitioner (fake)",
+  "projects_1_extended_overview": "Sample Questions for the AWS Certified Cloud Practitioner CA-01 Exam.",
 
-  "projects_2_overview": "Code Hub is a hub for code lovers in Sousse, Tunisia",
-  "projects_2_extended_overview": "codehub.tn is a showcase website for Code Hub: a coworking space at Sousse for developers",
+  "projects_2_overview": "Tetris-Phunk is the classic Tetris, which currently only works in desktop browsers.",
+  "projects_2_extended_overview": "Tetris-Phunk is the classic Tetris, which currently only works in desktop browsers.",
   
-  "projects_3_overview": "Burpees.io is a solution for gyms.",
-  "projects_3_extended_overview": "Burpees.io is a solution for gyms. you can see plannings, take reservations and more. We've developed a white labalise app: If a client wants his native application it will be generated automatically. The dashboard is for the gym owner.",
+  "projects_3_overview": "Portal, implementa parte de la logica de pandora con modulos o secciones (menu) -> roles -> usuarios",
+  "projects_3_extended_overview": "Portal, implements part of Pandora's logic with modules or sections (menu) -> roles -> users, its purpose is to register events through the calendar, generate office visit income, create new users, benefits manager, benefits consultation, benefit reactions, digital credential that, through a QR, could prove that you are a collaborator in the company, in addition to a dashboard that shows the benefit indicators with the most likes and views and scheduling history , the benefits with fewer likes, generation of reports of the activities carried out on the portal through logs and income reports. In addition, an email is sent to the user when the password is reset, a new user entry, benefit consultation and event scheduling are made.",
+
+  "projects_4_overview": "Pandora",
+  "projects_4_extended_overview": "Pandora is a small app, coded in PHP, JavaScript, jQuery, Bootstrap, and Gentella Alella, which adapts its components into functions to write the frontend with PHP as well. It creates modules, shares modules with different Pandora apps, manages roles, assigns modules to roles to control user visibility. If you would like to see what it's about, please let us know in advance, as its repository is private.",
 
   "contact_full_name": "Full name",
   "contact_email": "E-mail adress",
