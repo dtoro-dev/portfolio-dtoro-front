@@ -44,17 +44,20 @@
   "show_all_projects": "See more",
   "go_back_home": "Go back",
 
-  "projects_1_overview": "Exam AWS Cloud Practitioner (fake)",
-  "projects_1_extended_overview": "Sample Questions for the AWS Certified Cloud Practitioner CA-01 Exam.",
+  "projects_1_overview": "Javascript Async",
+  "projects_1_extended_overview": "Asynchronism in JavaScript occurs when we have certain tasks that the browser is performing while in parallel the Call Stack is executing other tasks and those that are finishing are added to a waiting queue (callback queue), while the others continue to be executed, then When all the tasks are ready, the code finishes executing (event loop).",
 
   "projects_2_overview": "Tetris-Phunk is the classic Tetris, which currently only works in desktop browsers.",
   "projects_2_extended_overview": "Tetris-Phunk is the classic Tetris, which currently only works in desktop browsers.",
   
-  "projects_3_overview": "Portal, implementa parte de la logica de pandora con modulos o secciones (menu) -> roles -> usuarios",
-  "projects_3_extended_overview": "Portal, implements part of Pandora's logic with modules or sections (menu) -> roles -> users, its purpose is to register events through the calendar, generate office visit income, create new users, benefits manager, benefits consultation, benefit reactions, digital credential that, through a QR, could prove that you are a collaborator in the company, in addition to a dashboard that shows the benefit indicators with the most likes and views and scheduling history , the benefits with fewer likes, generation of reports of the activities carried out on the portal through logs and income reports. In addition, an email is sent to the user when the password is reset, a new user entry, benefit consultation and event scheduling are made.",
+  "projects_3_overview": "Soainters Portal is a type of intranet for human management or human resources.",
+  "projects_3_extended_overview": "Soainters Portal is a type of intranet for human management or human resources.",
 
   "projects_4_overview": "Pandora",
   "projects_4_extended_overview": "Pandora is a small app, coded in PHP, JavaScript, jQuery, Bootstrap, and Gentella Alella, which adapts its components into functions to write the frontend with PHP as well. It creates modules, shares modules with different Pandora apps, manages roles, assigns modules to roles to control user visibility. If you would like to see what it's about, please let us know in advance, as its repository is private.",
+
+  "projects_5_overview": "Exam AWS Cloud Practitioner (fake)",
+  "projects_5_extended_overview": "Sample Questions for the AWS Certified Cloud Practitioner CA-01 Exam.",
 
   "contact_full_name": "Full name",
   "contact_email": "E-mail adress",

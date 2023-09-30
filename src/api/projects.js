@@ -1,3 +1,4 @@
+import { Asincronismo } from "../assets/images/AsincronismoJS";
 import { PortadaExamAws } from "../assets/images/ExamAws";
 import {
   PortadaPortalSoainters,
@@ -12,19 +13,18 @@ import {
 const projects = [
   {
     id: 1,
-    title: "Examen AWS Cloud Practitioner",
-    private: true,
-    technologies: ["React JS", "Vite JS", "Material UI", "SQLite"],
+    title: "Asincronismo Javascript",
+    private: false,
+    technologies: ["Javascript"],
     description:
-      "Preguntas de ejemplo sobre el examen CA-01 de AWS cloud practitioner.",
+      "El asincronismo en JavaScript ocurre cuando tenemos ciertas tareas que el navegador va realizando mientras en paralelo el Call Stack va ejecutando otras tareas y las que se van terminando se agregan a una cola de espera (callback queue), mientras las demás se siguen ejecutando, luego cuando todas las tareas están listas termina de ejecutarse el código (event loop).",
     backgroundImage:
       "https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg",
     Images: [],
-    frontImage: PortadaExamAws,
-    github: "https://github.com/dtoro-dev/tetris",
+    frontImage: Asincronismo,
+    github: "https://github.com/dtoro-dev/asincronismo-js-platzi",
     comment: [
-      "El desarrollo no se continuo",
-      "Se debe de considerar un ORM",
+      "Curso realizado con Platzi",
     ],
   },
   {
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Portal vBeta",
+    title: "Portal",
     private: true,
     technologies: [
       "React JS",
@@ -78,11 +78,22 @@ const projects = [
     Images: [],
     frontImage: PortadaTetris,
     github: "https://github.com/dtoro-dev/tetris",
-    comment: [
-      "El desarrollo no se continuo",
-      "Se debe de considerar un ORM",
-    ],
-  }
+    comment: ["El desarrollo no se continuo", "Se debe de considerar un ORM"],
+  },
+  {
+    id: 5,
+    title: "Examen AWS Cloud Practitioner",
+    private: true,
+    technologies: ["React JS", "Vite JS", "Material UI", "SQLite"],
+    description:
+      "Preguntas de ejemplo sobre el examen CA-01 de AWS cloud practitioner.",
+    backgroundImage:
+      "https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg",
+    Images: [],
+    frontImage: PortadaExamAws,
+    github: "https://github.com/dtoro-dev/tetris",
+    comment: ["El desarrollo no se continuo", "Se debe de considerar un ORM"],
+  },
 ];
 
 export default projects;
