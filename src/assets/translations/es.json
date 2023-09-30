@@ -44,18 +44,20 @@
   "show_all_projects": "Ver más",
   "go_back_home": "Volver",
 
-  "projects_1_overview": "Examen AWS Cloud Practitioner",
-  "projects_1_extended_overview": "Preguntas de ejemplo sobre el examen CA-01 de AWS cloud practitioner.",
+  "projects_1_overview": "Asincronismo Javascript",
+  "projects_1_extended_overview": "El asincronismo en JavaScript ocurre cuando tenemos ciertas tareas que el navegador va realizando mientras en paralelo el Call Stack va ejecutando otras tareas y las que se van terminando se agregan a una cola de espera (callback queue), mientras las demás se siguen ejecutando, luego cuando todas las tareas están listas termina de ejecutarse el código (event loop).",
   
   "projects_2_overview": "Tetris-Phunk es el clásico tetris, el cual de momento solo funciona en navegadores de escritorio.",
   "projects_2_extended_overview": "Tetris-Phunk es el clásico tetris, el cual de momento solo funciona en navegadores de escritorio.",
   
-  "projects_3_overview": "Portal Soainters, implementa parte de la logica de pandora con modulos o secciones.",
-  "projects_3_extended_overview": "Portal, implementa parte de la logica de pandora con modulos o secciones (menu) -> roles -> usuarios, tiene como finalidad realizar el registro de los eventos por medio del calendario, generar el ingreso visita a la oficina, crear nuevos usuario, gestor de beneficios, consulta de beneficios, recciones a beneficios, credencial digital que a través de un QR, podria acreditar que es colaborador en la empresa, además de un dashboard que muestra los indicadores de los beneficios con más likes y vistas e histórico de agendamiento, los beneficios con menos likes, generación de reportes de las actividades realizadas en el portal a través de logs y reporte de ingreso. Además, se le envía correo al usuario cuando se restablece la clave, se realiza un ingreso de usuario nuevo, consulta de beneficio y agendamiento evento.",
+  "projects_3_overview": "Portal Soainters es un tipo de intranet para gestion humana o recursos humanos.",
+  "projects_3_extended_overview": "Portal Soainters es un tipo de intranet para gestion humana o recursos humanos.",
 
   "projects_4_overview": "Pandora",
   "projects_4_extended_overview": "Pandora es una pequeña app, codificada en PHP, javascript, jquery, bootstrap y Gentella Alella, el que adapte sus componentes en funciones para escribir el frontend con php tambien. Crea Modulos, comparte modulos con dinstintas apps pandora, roles, asignacion de modulos a los roles, asi controlar la visualizacion del usuario. Si desea ver de que trata, favor de avisar con anticipación, ya que su repositorio es privado.",
-  
+
+  "projects_5_overview": "Examen AWS Cloud Practitioner",
+  "projects_5_extended_overview": "Preguntas de ejemplo sobre el examen CA-01 de AWS cloud practitioner.",
   
   "contact_full_name": "Nombre Completo",
   "contact_email": "Dirección de correo",

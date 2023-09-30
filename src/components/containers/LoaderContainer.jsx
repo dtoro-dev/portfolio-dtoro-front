@@ -1,7 +1,7 @@
 
 import { useTheme } from "@mui/material";
 import { motion } from "framer-motion";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import LoaderContext from "../../contexts/loaderContext";
 
 const LoaderContainer = ({ children }) => {
