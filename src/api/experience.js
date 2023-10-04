@@ -2,25 +2,25 @@
 const experience = [
   {
     id: 0,
-    company: "SOAINT S.A. – Principal Financial Group",
-    jobTitle: "Consultor Técnico",
-    fromDate: "05/2021",
-    toDate: "08/2021",
-    project: true,
-    references: false,
-    description:
-      "En principal participe en el backend, especificamente para migraciones y despliegue de arquitecturas basadas en AWS. Se utilizaba AWS-CDK, que permite crear arquitecturas de servicios AWS basadas en codigo, en este caso se utilizo node ts. Fui parte de un immersion day aws, dando inicio a la capacitacion con los cursos de AWS Partner.",
-  },
-  {
-    id: 1,
     company: "SOAINT S.A. – Portal Soainters",
     jobTitle: "Consultor Técnico",
     fromDate: "08/2020",
-    toDate: "04/2023",
+    toDate: "09/2023",
     project: false,
     references: false,
     description:
       "De manera paralela a los proyectos en los que he participado en la empresa Soaint S.A., hemos desarrollado en conjunto a un equipo de trabajo, una aplicacion de gestión. Esta app inicio con el fin de controlar los ingresos a la oficina en pandemia. Con el pasar del tiempo la aplicación tomo un giro otorgandole mas facultades, donde se pueden agregar módulos nuevos, roles, control de usuarios, agenda, solicitudes, credenciales digitales, asignación debeneficios, contempla configuración personalizada de parámetros para la aplicación, uno de estos parámetrosera, ese especificamente identificar si el estado se encontraba en pandemia, este se activaba y los controles habilitaban campos de temperaturas. Al tener roles, los perfiles que eran de los colaboradores podían ver sus beneficios tanto asignados por contratos, como beneficios negociables por gestiónHumana al momento de ser contratado. Aplicacion desarrollada con React js y Node js.",
+  },
+  {
+    id: 1,
+    company: "SOAINT S.A. – Principal Financial Group",
+    jobTitle: "Consultor Técnico",
+    fromDate: "05/2023",
+    toDate: "08/2023",
+    project: true,
+    references: false,
+    description:
+      "En principal participe en el backend, especificamente para migraciones y despliegue de arquitecturas basadas en AWS. Se utilizaba AWS-CDK, que permite crear arquitecturas de servicios AWS basadas en codigo, en este caso se utilizo node ts. Fui parte de un immersion day aws, dando inicio a la capacitacion con los cursos de AWS Partner.",
   },
   {
     id: 2,
